@@ -53,9 +53,12 @@
                     android:background="@color/colorGray"/>
 
                 <LinearLayout
+                    android:id="@+id/call_reg_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="15">
+                    android:weightSum="15"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <TextView
                         android:layout_width="0dp"
@@ -68,14 +71,10 @@
                         android:textColor="@color/colorPrimaryDark"/>
 
                     <ImageView
-                        android:id="@+id/call_reg_1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/phone_big"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:focusableInTouchMode="true"/>
+                        android:src="@drawable/phone_big"/>
 
                 </LinearLayout>
 
@@ -113,7 +112,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="15">
+                    android:weightSum="15"
+                    android:id="@+id/call_reg_2"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <TextView
                         android:layout_width="0dp"
@@ -126,14 +128,11 @@
                         android:textColor="@color/colorPrimaryDark"/>
 
                     <ImageView
-                        android:id="@+id/call_reg_2"
+
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/phone_big"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:focusableInTouchMode="true"/>
+                        android:src="@drawable/phone_big"/>
 
                 </LinearLayout>
 
@@ -180,9 +179,12 @@
                     android:background="@color/colorGray"/>
 
                 <LinearLayout
+                    android:id="@+id/call_acc_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="15">
+                    android:weightSum="15"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <TextView
                         android:layout_width="0dp"
@@ -195,14 +197,11 @@
                         android:textColor="@color/colorPrimaryDark"/>
 
                     <ImageView
-                        android:id="@+id/call_acc_1"
+
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/phone_big"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:focusableInTouchMode="true"/>
+                        android:src="@drawable/phone_big"/>
 
                 </LinearLayout>
 
@@ -250,9 +249,12 @@
                     android:background="@color/colorGray"/>
 
                 <LinearLayout
+                    android:id="@+id/call_trans_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="15">
+                    android:weightSum="15"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <TextView
                         android:layout_width="0dp"
@@ -265,14 +267,10 @@
                         android:textColor="@color/colorPrimaryDark"/>
 
                     <ImageView
-                        android:id="@+id/call_trans_1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/phone_big"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:focusableInTouchMode="true"/>
+                        android:src="@drawable/phone_big"/>
 
                 </LinearLayout>
 
@@ -308,9 +306,12 @@
                     android:background="@color/colorGray"/>
 
                 <LinearLayout
+                    android:id="@+id/call_trans_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="15">
+                    android:weightSum="15"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <TextView
                         android:layout_width="0dp"
@@ -323,14 +324,10 @@
                         android:textColor="@color/colorPrimaryDark"/>
 
                     <ImageView
-                        android:id="@+id/call_trans_2"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/phone_big"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:focusableInTouchMode="true"/>
+                        android:src="@drawable/phone_big"/>
 
                 </LinearLayout>
 
@@ -366,9 +363,12 @@
                     android:background="@color/colorGray"/>
 
                 <LinearLayout
+                    android:id="@+id/call_trans_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="15">
+                    android:weightSum="15"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <TextView
                         android:layout_width="0dp"
@@ -381,14 +381,10 @@
                         android:textColor="@color/colorPrimaryDark"/>
 
                     <ImageView
-                        android:id="@+id/call_trans_3"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/phone_big"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:focusableInTouchMode="true"/>
+                        android:src="@drawable/phone_big"/>
 
                 </LinearLayout>
 
@@ -424,9 +420,12 @@
                     android:background="@color/colorGray"/>
 
                 <LinearLayout
+                    android:id="@+id/call_trans_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="15">
+                    android:weightSum="15"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <TextView
                         android:layout_width="0dp"
@@ -439,14 +438,10 @@
                         android:textColor="@color/colorPrimaryDark"/>
 
                     <ImageView
-                        android:id="@+id/call_trans_4"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/phone_big"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:focusableInTouchMode="true"/>
+                        android:src="@drawable/phone_big"/>
 
                 </LinearLayout>
 
@@ -495,7 +490,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="15">
+                    android:weightSum="15"
+                    android:id="@+id/call_web_1">
 
                     <TextView
                         android:layout_width="0dp"
@@ -505,17 +501,15 @@
                         android:padding="10dp"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@color/colorPrimaryDark"/>
+                        android:textColor="@color/colorPrimaryDark"
+                        android:clickable="true"
+                        android:focusable="true"/>
 
                     <ImageView
-                        android:id="@+id/call_web_1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/phone_big"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:focusableInTouchMode="true"/>
+                        android:src="@drawable/phone_big"/>
 
                 </LinearLayout>
 
@@ -554,7 +548,8 @@
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:padding="10dp"/>
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -571,10 +566,13 @@
                     android:background="@color/colorGray"/>
 
                 <LinearLayout
+                    android:id="@+id/call_sec_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:weightSum="15"
-                    android:layout_marginTop="5dp">
+                    android:layout_marginTop="5dp"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <TextView
                         android:layout_width="0dp"
@@ -587,22 +585,21 @@
                         android:textColor="@color/colorPrimaryDark"/>
 
                     <ImageView
-                        android:id="@+id/call_sec_1"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/phone_big"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:focusableInTouchMode="true"/>
+                        android:src="@drawable/phone_big"/>
 
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/call_sec_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:weightSum="15"
-                    android:layout_marginTop="5dp">
+                    android:layout_marginTop="5dp"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <TextView
                         android:layout_width="0dp"
@@ -615,22 +612,21 @@
                         android:textColor="@color/colorPrimaryDark"/>
 
                     <ImageView
-                        android:id="@+id/call_sec_2"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/phone_big"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:focusableInTouchMode="true"/>
+                        android:src="@drawable/phone_big"/>
 
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/email_sec"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:weightSum="15"
-                    android:layout_marginTop="5dp">
+                    android:layout_marginTop="5dp"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <TextView
                         android:layout_width="0dp"
@@ -643,14 +639,11 @@
                         android:textColor="@color/colorPrimaryDark"/>
 
                     <ImageView
-                        android:id="@+id/email_sec"
+
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/mail"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:focusableInTouchMode="true"/>
+                        android:src="@drawable/mail"/>
 
                 </LinearLayout>
 

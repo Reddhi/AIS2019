@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class RegistrationPagerAdapter extends FragmentPagerAdapter {
-    private static int NUM_ITEMS = 4;
+    private static int NUM_ITEMS = 5;
 
     public RegistrationPagerAdapter(FragmentManager fragmentManager) {
         super(fragmentManager);
