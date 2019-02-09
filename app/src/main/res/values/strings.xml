@@ -1,0 +1,311 @@
+<resources>
+    <string name="app_name">Aero India International Seminar</string>
+    <string name="seconds">Seconds</string>
+    <string name="minutes">Minutes</string>
+    <string name="hours">Hours</string>
+    <string name="days">Days</string>
+    <string name="home">Home</string>
+    <string name="message_from_chairman">Message From Chairman</string>
+    <string name="seminar">Seminar</string>
+    <string name="schedule">Programme Schedule</string>
+    <string name="registration">Registration</string>
+    <string name="sponsorship">Sponsorship</string>
+    <string name="venue">Venue</string>
+    <string name="contact">Contact</string>
+    <string name="faq">FAQ</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string-array name="faq_questions">
+        <item>When will the seminar take place? Where is it located?</item>
+        <item>How can I register? What are the registration rates?</item>
+        <item>I only want to attend one day of the conference, is that possible?</item>
+        <item>I just want to attend one session. Is that possible to do without registering for the conference?</item>
+        <item>What is the cancellation policy for the conference?</item>
+        <item>Is the registrations are transferable?</item>
+        <item>Who should attend the conference?</item>
+        <item>Does my registration allow me to access all conference areas and events? What does my registration include?</item>
+        <item>Is the seminar schedule available?</item>
+        <item>I am an overseas participant and need a letter of invitation before I can receive my visa. What is the procedure?</item>
+        <item>What should I wear?</item>
+        <item>What services are available for special needs and requests?</item>
+        <item>What shuttle services and transportation is available?</item>
+        <item>My question is not listed here. Whom do I contact?</item>
+        <item>Who do I contact if I have a complaint?</item>
+        <item>Can I advertise in the seminar program? </item>
+        <item>How can my organization become a seminar sponsor?</item>
+        <item>Is accommodation for the DRDO Delegates booked?</item>
+        <item>Is the hotel rooms blocked for the delegates?</item>
+        <item>Do I need to book the hotels immediately?</item>
+        <item>How can I reserve a hotel room, and what are the rates?</item>
+        <item>What else is there to do outside of the conference? What should I be doing when the conference day ends?</item>
+    </string-array>
+
+    <string-array name="faq_answers">
+        <item>The AeroIndia International Seminar 2019 will take place February 18th &amp; 19th, 2019 at the Royal Orchid Resort &amp; Convention Centre, Jakkur Flying Club, Near, Bellary Rd, Allalasandra, Yelahanka, Bengaluru, Karnataka 560065</item>
+        <item>Please visit the registration page for deadlines, rates, and other registration information.</item>
+        <item>No, one-day seminar registration is not available. Please note that your registration is valid for all sessions and events on  both  the days.</item>
+        <item>Individuals wanting to participate in one session must register for two days. AIS 2019 does not allow unregistered attendees to come to sessions or other seminar events.</item>
+        <item>No refund will be issued for cancellations. AIS 2019 is not responsible for problems beyond our control such as weather conditions, campus conditions, travel difficulties, visa problems, health issues, etc.</item>
+        <item>No, the registrations are not transferable.</item>
+        <item>Please refer the theme of AIS 2019 and we recommend Professionals, academicians and students who are interested in aerospace domain.</item>
+        <item>Your registration will give you access to all speaker sessions, events and the exhibit hall, but you need to be wearing your badge at all times. We have tea/coffee and snacks at every break and lunch. Veg and Non-Veg food are severed during lunch and no special request will be permitted for change of menu.</item>
+        <item>Details will be posted on our website and Android app as and when they are confirmed. A full seminar schedule, including seminar sessions, will be available on our website and Android app.</item>
+        <item>Please contact secretary@aeroindiaseminar.com for assistance.</item>
+        <item>There is no official dress code for the seminar. Most attendees wear business attire or business casual attire during their time at the conference.</item>
+        <item>We encourage persons with disabilities to participate in their programs and activities. Please contact secretary@aeroindiaseminar.com no later than January 30, 2019.</item>
+        <item>No. All delegates are requested to make their own arrangements. However, cabs(Radio taxies) are easily available near the venue.</item>
+        <item>Please contact secretary@aeroindiaseminar.com for assistance.</item>
+        <item>Please contact secretary@aeroindiaseminar.com for assistance.</item>
+        <item>Yes, please contact secretary@aeroindiaseminar.com to make arrangements.</item>
+        <item>Sponsorship opportunities are limited, so act today. To become a sponsor please visit the sponsor page</item>
+        <item>No. Estate Management Unit (EMU) Bengaluru may be contacted to book DRDO guest house for DRDO delegates.</item>
+        <item>No rooms have been blocked, by the seminar management committee for the guests in the hotels. However discounted rates has been negotiated with few hotels as given in accommodation page.</item>
+        <item>Guests are requested to book the hotels well in advance due to heavy rush for Aero India show during same week.</item>
+        <item>Please visit Royal Orchid Resort &amp; Convention Centre, the page for information. Delegates may book hotel rooms directly. Optionally delegates may choose to stay  in hotels as per their convenience. Tips: Ask for special rates for delegates for conference. !!!</item>
+        <item>Aero India Exhibition which is organised every two years has already carved a niche for itself globally as a premier aerospace exhibition.</item>
+        <item>Exhibition is scheduled on 20&#8211;24 Feb 2019. Visit https://aeroindia.gov.in/Aero&#8211;India for more details</item>
+    </string-array>
+
+
+    <string-array name="theme_topics">
+        <item>Plenary Session</item>
+        <item>Aerospace Materials/Stealth</item>
+        <item>Hypersonics</item>
+        <item>Artificial Intelligence/Deep Learning in Aerospace</item>
+        <item>Sensors/Avionics</item>
+        <item>Propulsion: Missile</item>
+        <item>Propulsion: Space</item>
+        <item>Propulsion: Gas Turbine</item>
+        <item>UAV/UCAV/Stealth</item>
+    </string-array>
+
+    <string-array name="theme_details">
+        <item>Plenary Session Talks from International and National leaders will address future aerospace programmes dealing with military and civil aerospace market requirements, military platforms across all sectors of manned and unmanned, technology insertion, research areas etc.\nSub Theme Talks will be delivered by renowned researchers, academicians and technologists.</item>
+        <item>Advances in materials research &amp; technologies for development of high-performance systems with competitive pricing using innovative manufacturing technologies, product support throughout life-cycle with possible on-site manufacturing capabilities, quality, certification, field support, defect investigations etc., are expected to be presented for the benefit of participants by internationally and nationally acclaimed experts.</item>
+        <item>National and International experts in the field of hypersonics deal with the topics of global visibility of competence of high speed vehicle science and technology and share their views of research and development activities in the subject domain. The session will have eminent speakers from different entities of research, academia and industry representing various countries. The participants would benefit from the insight on the current status of hypersonic programs, re-usable launch vehicles, present and futuristic international collaborations. Advancements and emerging concepts in ramjet/scramjet technology are expected to be deliberated in tune with the demanding requirements.</item>
+        <item>Experienced technologists, researchers and academicians representing world renowned technology/aerospace companies and academic institutions would bring up the perspective of how the aerospace majors leverage the artificial intelligent systems, applications and  technologies to achieve  efficiency and robustness in implementation, testing and production of complex designs within shorter development cycle times. Benefits in solving difficult problems more efficiently, long-term optimization, planning, providing human-like capabilities, novel ideas etc., are expected to be deliberated that benefit the aerospace, data science and software community.</item>
+        <item>Renowned technologists and researchers, both from India and abroad, have been invited to provide insight in growing field of radars, electronic warfare systems etc., sensors and navigation systems under avionics. Advanced topics in these fields that are being pursued/envisaged for future will be discussed in the seminar. Participants will be provided with valuable inputs on the state-of-art and futuristic technologies in these fields. Areas such as multimode surveillance and fire control radars, electronic support measures, multi-sensor systems for multi-mission maritime aircraft, sense and avoid, cognitive airborne surveillance systems will be covered in the seminar under this sub-theme.</item>
+        <item>The session brings out the present and futuristic aspects of missile propulsion, highlighting the genuine features of solid propulsion systems which are work-horse for both missile and space applications. Eminent speakers will also dwell upon the advanced phase of research work being carried out world-wide for enhancing the performance of solid fuel and techniques to handle the energetic binder materials. Manufacturing process of solid propellants such as low melting temperature thermoplastic propellant and green propellant will be addressed.</item>
+        <item>The current trend in space propulsion is transforming the access to and operation in space with emphasis on economic considerations. Participation of private industries has brought in great transformation in developing new propulsion systems as well as innovative use of developed systems. Renowned experts in the field of space propulsion will provide insight into propulsion technologies, for both launch vehicles and spacecraft. Topics associated with solid, liquid, cryogenic, semi-cryogenic, electric and air-breathing propulsion systems will be addressed with specific emphasis on Indian space programme. Internationally acclaimed scientists will address the exciting future trends in space propulsion.</item>
+        <item>World renowned leaders in gas turbine propulsion would bring up the perspective of gas turbine engines that have dominated aircraft propulsion over the last six decades delivering the required levels of thrust over a wide range of flight conditions. These will include the next generation gas turbine engines for combat systems. The talks will explore the emergence of integrated power systems, combining the delivery of propulsive thrust with high levels of electrical power and system level thermal management. The topics associated with integrated power systems relate to the impact of digital and more intelligent systems. They will also highlight the product lifecycle, from design and development through to in-service support. Emerging areas viz., all electric and hybrid propulsion will also be discussed.</item>
+        <item>Future warfare is going to be dominated by UAVs and their combat variants. Technologies and payloads play a significant role in development of these advanced vehicles considering the additional challenge of flying in shared airspace with their civilian counterparts. The war game simulation that needs to be dynamically adaptable to the changing conventional and unconventional scenarios, network centric, geo-spatial gaming space, system engineering approach to futuristic aircraft development and case studies are going to be presented and deliberated under this theme for the benefit of technocrats, scientists and student participants.</item>
+    </string-array>
+
+    <string-array name="participating_organizations">
+        <item>Aeronautical Development Establishment, DRDO, Bengaluru, India</item>
+        <item>Air Force Research Laboratory, Wright-Patterson Air Force Base, Ohio, USA</item>
+        <item>Boeing India, Bengaluru, India</item>
+        <item>BAE Systems, UK</item>
+        <item>Central Institute of Aviation Motors, Russia</item>
+        <item>National Centre for Space Studies (CNES), France</item>
+        <item>Dassault Systèmes, France</item>
+        <item>Defence Avionics Research Establishment, DRDO, Bengaluru, India</item>
+        <item>Electronics Radar Development Establishment, DRDO, Bengaluru, India</item>
+        <item>General Electric Aviation, Bengaluru, India</item>
+        <item>IBM India, Bengaluru, India</item>
+        <item>Indian Air Force</item>
+        <item>Indian Army</item>
+        <item>Indian Navy</item>
+        <item>Indian Institute of Technology Madras, India</item>
+        <item>Indian Institute of Science, Bengaluru, India</item>
+        <item>Indian Space Research Organisation, Bengaluru, India</item>
+        <item>Larsen &amp; Toubro, Mumbai, India</item>
+        <item>Life Prediction Technologies Inc., Ottawa, Canada</item>
+        <item>MBDA Missile Systems, France</item>
+        <item>Mishra Dhatu Nigam Limited, Hyderabad, India</item>
+        <item>Madras Institute of Technology, Chennai, India</item>
+        <item>Iskra, Russia</item>
+        <item>Pratt &amp; Whitney, USA</item>
+        <item>Presagis Inc., Canada</item>
+        <item>Research Centre Imarat,DRDO, Hyderabad, India</item>
+        <item>Rolls Royce, UK</item>
+        <item>Thales Defence Mission Systems, France</item>
+        <item>United Engine Corporation, Russia</item>
+        <item>Vikram Sarabhai Space Centre, India</item>
+    </string-array>
+
+
+    <string name="message_from_chairman_text_1">DRDO is privileged to organize the 12th Aero India International Seminar on the theme “Emerging Frontiers in Aerospace Technologies“.</string>
+    <string name="message_from_chairman_text_2">In the light of rapid advances in Science &amp; Technology, and India’s quest to emerge as a world leader, concerted efforts of all stakeholders is a prerogative. Government of India is providing the necessary thrust to self-reliance and skill development through various programmes and policies. Seminars such as this will help accelerate this process.</string>
+    <string name="message_from_chairman_text_3">It is expected that this seminar will be the ideal platform for aerospace professionals to deliberate on the contemporary and futuristic developments in this interesting area of research. Delegates can utilize this technical rendezvous to corroborate their mutual skills and collaborate with fellow researchers for professional advancement.</string>
+    <string name="message_from_chairman_text_4">I extend a warm welcome to the Aero India International Seminar 2019.</string>
+    <string name="message_from_chairman_text_5">Wishing the event all success !!</string>
+    <string name="chairman_details">Dr G Satheesh Reddy\n\nSecretary,\nDepartment of Defence R&amp;D\nChairman,\nDRDO</string>
+    <string name="about_text_1">The Twelfth edition of Aero India International Seminar (AIS–2019) would be held during 18th &amp; 19th Feb 2019 as a prelude to the Aero India 2019 being organised at Bengaluru. This International seminar is organized by Defence Research and Development Organization (DRDO), Govt of India in association with Aeronautical Society of India (AeSI). This seminar would be a world class event, which provides an ideal platform to all the participating professionals to deliberate path breaking and innovative ideas for the benefit of aerospace institutions and community.</string>
+    <string name="about_text_2">Researchers with International &amp; National acclamations, academicians, technologists, industry specialists and Armed Forces would deliver talks on emerging Aerospace domains. Wide participation of specialists from Aerospace &amp; Defence Research Institutions, Public and Private sector organisations both from abroad and India in this two day seminar will create networking platforms that broach cutting edge R&amp;D.</string>
+    <string name="about_text_3">Twelfth edition of AIS–2019 will provide a unique opportunity to learn from the distinguished speakers and create an avenue to highlight your products/services to aerospace sector. The main theme for the AIS-2019 is “Emerging Frontiers in Aerospace Technologies”.</string>
+    <string name="about_text_4">AIS-2019 is of great importance and of global significance, wherein eminent speakers in the field of aerospace, science and technology are invited from all over the world.</string>
+
+    <string name="registration_about_1">Registration Information</string>
+    <string name="registration_about_2">1. Spot Registration at the venue is not permitted.\n2. Online Registration is currently not permitted.\n3. Cancellation, transfer or refund of registration fee paid is not allowed.\n4. For any assistance, kindly mail to registration@aeroindiaseminar.com.\n5. Individuals can register either as DRDO delegate / Industry delegate/ Academia delegate(Teaching professional) /  Student delegate as per registration mode listed underneath.</string>
+    <string name="registration_grid_00">Delegate Type</string>
+    <string name="registration_grid_01">Registration Mode</string>
+    <string name="registration_grid_10">DRDO Delegate</string>
+    <string name="registration_grid_11">1. Nomination through Point of Contact (PoC) under respective DG cluster\n2. Nomination through respective Lab Director</string>
+    <string name="registration_grid_20">Industry Delegate\n(Indian &amp; International)</string>
+    <string name="registration_grid_21">1. Nomination through Point of Contact (PoC) under respective DG cluster\n2. Nomination through respective Company HR or Head (to whom Aero India Seminar office have sent request letter or interacted for nomination of delegate).</string>
+    <string name="registration_grid_30">Academia Delegate</string>
+    <string name="registration_grid_31">Nomination through respective Institute Head (to whom Aero India Seminar office have sent request letter or interacted for nomination of delegate)</string>
+    <string name="registration_grid_40">Student Delegate</string>
+    <string name="registration_grid_41">1. Nomination through Point of Contact (PoC) under respective DG cluster\n2. Nomination through respective Institute Head (to whom Aero India Seminar office have sent request letter or interacted for nomination of delegate)</string>
+    <string name="registration_grid_2">Delegate Fees</string>
+    <string name="registration_grid_2_00">Indian Delegate</string>
+    <string name="registration_grid_2_01">Rs. 10,000/-</string>
+    <string name="registration_grid_2_10">Foreign Delegate</string>
+    <string name="registration_grid_2_11">USD 800/-</string>
+    <string name="registration_grid_2_20">Student Delegate (Indian)</string>
+    <string name="registration_grid_2_21">Rs. 3,000/-</string>
+    <string name="registration_security_header">Security Instructions</string>
+    <string name="registration_security_details">(a) Invitees and delegates are requested to reach the venue by 07:00 hrs for security check and other necessary formalities.\n(b) It is mandatory to bring Organisation/Institute ID card for display at the time of registration.\n(c) Invitees and delegates from Private Industries and Institutes should also bring any Govt. issued ID card (Driving license, Adhar Card, Pan Card, etc.)\n(d) Kindly exhibit Aero India Seminar 2019 issued identity card at all the time during seminar.\n(e) No baggage is allowed inside the auditorium.</string>
+    <string name="registration_payment_header">Bank Details For Online Transfer</string>
+    <string name="registration_payment_grid_00">Bank Name</string>
+    <string name="registration_payment_grid_01">STATE BANK OF INDIA</string>
+    <string name="registration_payment_grid_10">Branch</string>
+    <string name="registration_payment_grid_11">C.V. RAMAN NAGAR, BANGALORE 560 093</string>
+    <string name="registration_payment_grid_20">Current Account</string>
+    <string name="registration_payment_grid_21">CHAIRMAN, AERO INDIA SEMINAR 2019</string>
+    <string name="registration_payment_grid_30">Account Number</string>
+    <string name="registration_payment_grid_31">38 15 66 29 564</string>
+    <string name="registration_payment_grid_40">IFSC Code</string>
+    <string name="registration_payment_grid_41">SBIN0003994</string>
+    <string name="registration_payment_grid_50">Swift Code</string>
+    <string name="registration_payment_grid_51">SBININBB147</string>
+    <string name="registration_payment_grid_60">MICR NO</string>
+    <string name="registration_payment_grid_61">560002030</string>
+    <string name="accommodation_header">Accommodation for Delegates attending Aero India International Seminar</string>
+    <string name="accommodation_rules_1">1. Delegates need to make their own arrangements.\n2. DRDO scientists are requested to contact EMU Bengaluru for booking of accommodation in DRDO Guest House. EMU Bengaluru has been requested to accord priority to DRDO scientist attending the Aero India Seminar.\n3. No rooms have been blocked by the seminar management committee for the guests in the hotels. However discounted rates have been negotiated with hotels including Royal Orchid Convention Center (Venue) and ITC Windsor Bangalore. Delegates are requested to contacts hotel directly for booking of accommodation.</string>
+    <string name="accommodation_grid_header">Point of Contact  for booking accommodation for AIS 2019</string>
+    <string name="accommodation_grid_00">Categories</string>
+    <string name="accommodation_grid_01">DRDO Guest House</string>
+    <string name="accommodation_grid_02">Hotels</string>
+    <string name="accommodation_grid_02a">Royal Orchid</string>
+    <string name="accommodation_grid_02b">ITC Windsor</string>
+    <string name="accommodation_grid_10">DRDO Delegates</string>
+    <string name="accommodation_grid_11">EMU Bangalore</string>
+    <string name="accommodation_grid_12">reservations.resorts@royalorchidhotels.com</string>
+    <string name="accommodation_grid_13">sarbani.chakraborty@itchotels.in</string>
+    <string name="accommodation_grid_20">Non DRDO Delegates</string>
+    <string name="accommodation_grid_21">Not Applicable</string>
+    <string name="accommodation_grid_22">reservations.resorts@royalorchidhotels.com</string>
+    <string name="accommodation_grid_23">sarbani.chakraborty@itchotels.in</string>
+    <string name="accommodation_grid_30">Student Delegates</string>
+    <string name="accommodation_grid_31">Own Arrangements</string>
+    <string name="accommodation_rules_2">4. Delegates are requested to book the hotels well on time as the hotels are reported to be booked during February, being a peak season for conferences, tourism etc.\n5. Delegates are requested to make their own arrangements for transport to reach the Venue.</string>
+    <string name="royal_orchid">Royal Orchid Resorts &amp; Convention Center</string>
+    <string name="itc_windsor">ITC Windsor</string>
+    <string name="le_meridien">Le M\u00E9ridien Bangalore</string>
+    <string name="the_park">The Park Bangalore</string>
+    <string name="distance_0">Distance from Venue: 0 km</string>
+    <string name="distance_13">Distance from Venue: 13 km</string>
+    <string name="distance_15">Distance from Venue: 15 km</string>
+    <string name="distance_20">Distance from Venue: 20 km</string>
+    <string name="ro_address">Allalasandra, Bellary Road,\nNear Jakkur Flying Club\nYelahanka, Bengaluru - 560065</string>
+    <string name="ro_phone">+91 9902000107(Mobile)\n+91 80 2856 0668(Tel)\n+91 80 2856 0671(Facsimile)</string>
+    <string name="ro_email">sales3@royalorchidhotels.com</string>
+    <string name="ro_web">www.royalorchidhotels.com</string>
+    <string name="itc_address">25, Windsor Square,\nGolf Course Road\nBengaluru – 560052</string>
+    <string name="itc_phone">+91 9874699021(Mobile)\n++91 80 2226 9898(Tel)\n+91 80 2226 4941(Facsimile)</string>
+    <string name="itc_email">sarbani.chakraborty@itchotels.in</string>
+    <string name="lm_address">28 Sankey Road\nPb: No 174\nBengaluru - 560052</string>
+    <string name="lm_phone">+91 9900247226(Mobile)\n+91 80 22262233(Tel)\n+91 80 22262052(Facsimile)</string>
+    <string name="lm_email">sales1@lemeridienbangalore.com</string>
+    <string name="tp_address">14/7 MG Road\nBengaluru - 560042</string>
+    <string name="tp_phone">+91 9108887048(Mobile)\n+91 80 25594666 (Tel)\n+91 80 25594667(Facsimile)</string>
+    <string name="tp_email">mksingh@theparkhotels.com</string>
+    <string name="venue_address">Allalasandra,\nBellary Road,\nNear Jakkur Flying Club\nYelahanka,\nBengaluru - 560065</string>
+    <string name="venue_phone">+91 80 2856 0668 (Tel)\n+91 80 2856 0669 (Tel)\n+91 7022878566 (Mobile)</string>
+    <string-array name="accommodation_delegate_categories">
+        <item>DRDO Delegates</item>
+        <item>Non DRDO Delegates</item>
+        <item>Student Delegates</item>
+    </string-array>
+    <string-array name="accommodation_delegate_details">
+        <item><b>DRDO Guest House:</b>\nEMU Bangalore\n\n<b>Hotels:</b>\n1. Royal Orchid (reservations.resorts@royalorchidhotels.com)\n2. ITC Windsor (sarbani.chakraborty@itchotels.in)</item>
+        <item><b>Hotels:</b>\n1. Royal Orchid (reservations.resorts@royalorchidhotels.com)\n2. ITC Windsor (sarbani.chakraborty@itchotels.in)</item>
+        <item><b>Own Arrangements</b></item>
+    </string-array>
+    <string name="navigate">Navigate</string>
+
+    <string name="contact_header">Contact Information</string>
+
+    <string name="con_registration">Registration</string>
+    <string name="con_reg_name_1">Dr. Batchu Suresh</string>
+    <string name="con_reg_mob_1">+91 9449071941</string>
+    <string name="con_reg_name_2">Shri Prasant Kumar Panda</string>
+    <string name="con_reg_mob_2">+91 9900840226</string>
+    <string name="con_accommodation">Accommodation</string>
+    <string name="con_acc_name_1">Shri G Ramesh</string>
+    <string name="con_acc_mob_1">+91 8970028500</string>
+    <string name="con_transport">Transport</string>
+    <string name="con_trans_name_1">Shri. Saravanan K</string>
+    <string name="con_trans_mob_1">+91 9611778474</string>
+    <string name="con_trans_name_2">Shri. P Kirubakaran</string>
+    <string name="con_trans_mob_2">+919742726790</string>
+    <string name="con_trans_name_3">Shri. Sivanathan</string>
+    <string name="con_trans_mob_3">+91 9590906010</string>
+    <string name="con_trans_name_4">Shri. T RajaMob</string>
+    <string name="con_trans_mob_4">+91 9448855723</string>
+    <string name="con_website">Web Site /Android App</string>
+    <string name="con_web_name_1">Ajith V</string>
+    <string name="con_web_mob_1">+91 9606837393</string>
+    <string name="con_secretary">Secretary</string>
+    <string name="con_sec_name">Wg Cdr C R Vaidyanathan (Retd.)</string>
+    <string name="con_sec_details">Secretary\nSeminar Organising Committee – AIS 2019</string>
+    <string name="con_sec_mob_1">+91 9740864000</string>
+    <string name="con_sec_mob_2">+91 9110247392</string>
+    <string name="con_sec_address">Aero India International Seminar 2019\nC/O Gas Turbine Research Establishment (GTRE)\nDefence Research &amp; Development Organisation\nMinistry of Defence\nGovernment of India\nC V Raman Nagar\nBengaluru – 560 093\nKarnataka\nINDIA</string>
+    <string name="con_sec_email">secretary@aeroindiaseminar.com</string>
+
+    <string name="day_two_schedule">Day 2 Programme Schedule</string>
+    <string name="day_one_schedule">Day 1 Programme Schedule</string>
+
+    <string name="sponsorship_opportunities">Sponsorship Opportunities</string>
+    <string name="sl_diamond">Diamond Level</string>
+    <string name="sl_diamond_price">\u20B9 12.6 Lakhs</string>
+    <string name="sl_platinum">Platinum Level</string>
+    <string name="sl_platinum_price">\u20B9 8.4 Lakhs</string>
+    <string name="sl_gold">Gold Level</string>
+    <string name="sl_gold_price">\u20B9 6.3 Lakhs</string>
+    <string name="sl_silver">Silver Level</string>
+    <string name="sl_silver_price">\u20B9 4.2 Lakhs</string>
+    <string name="benefits_header">Benefits to Sponsors</string>
+    <string name="sponsorship_benefit_1">Logo in the Main backdrop of the Auditorium</string>
+    <string name="sponsorship_benefit_2">Logo on Seminar Website</string>
+    <string name="sponsorship_benefit_3">Free Advertisement in Souvenir</string>
+    <string name="sponsorship_benefit_4">Corporate literature in the delegate kit</string>
+    <string name="sponsorship_benefit_5">Video display and logo in back drop at the conference dinner venue</string>
+    <string name="sponsorship_benefit_6">Free Registration for delegates</string>
+    <string name="sponsorship_benefit_7">Linking the sponsors website in seminar website</string>
+    <string name="sponsorship_benefit_8">Kiosk / Stall</string>
+    <string name="additional_benefits">Additional Sponsorship Opportunities</string>
+    <string name="sponsorship_extra_benefit_1">Conference Dinner – \u20B9 15 lakhs\n(Benefits same as Diamond Sponsor + Promo posters &amp; product videos during the dinner)</string>
+    <string name="sponsorship_extra_benefit_2">Conference Kit \u20B9 10 lakhs\n(Benefits same as Platinum Sponsor + logo printed inside the conference kit + company brochures/mementos)</string>
+    <string name="sponsorship_extra_benefit_3">Cultural Event – \u20B9 4 lakhs\n(Benefits same as Silver Sponsor)</string>
+    <string name="full_page">Full Page</string>
+    <string name="half_page">Half Page</string>
+    <string name="additional_cost">With additional cost of \u20B9 50000/-</string>
+
+    <string name="souvenir_ad_tariff">Souvenir Advertisement Tariff</string>
+    <string name="souvenir_ad_category_1">Full Page Advertisement on Back Cover</string>
+    <string name="souvenir_ad_price_1">\u20B9 1,30,000/-</string>
+    <string name="souvenir_ad_category_2">Full Page Advertisement on Inner Front and Inner Back cover</string>
+    <string name="souvenir_ad_price_2">\u20B9 90,000/-</string>
+    <string name="souvenir_ad_category_3">Full Page Advertisement (Inside Page in Colour)</string>
+    <string name="souvenir_ad_price_3">\u20B9 70,000/-</string>
+    <string name="souvenir_ad_category_4">Half Page Advertisement (Inside Page in Colour)</string>
+    <string name="souvenir_ad_price_4">\u20B9 35,000/-</string>
+    <string name="cd_ad_tariff">Advertisement Tariff in CD</string>
+    <string name="cd_ad_category_1">For Sticker Side of CD – Main Side (excluding AIS Logo space)</string>
+    <string name="cd_ad_price_1">\u20B9 75,000/-</string>
+    <string name="cd_ad_category_2">CD Paper / Card Cover- Front Side</string>
+    <string name="cd_ad_price_2">\u20B9 1,00,000/-</string>
+    <string name="cd_ad_category_3">CD Paper / Card Cover- Back Side</string>
+    <string name="cd_ad_price_3">\u20B9 1,00,000/-</string>
+    
+    <string name="online_registration_header">Online Registration</string>
+    <string name="online_registration_text">Online Registration for Student Delegates, Private Industry Delegates and Academic Faculty Delegates is currently available only through the official website <i>www.aeroindiaseminar.com</i></string>
+    <string name="online_registration_button">Redirect To Website</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Page Under Construction.</string>
+</resources>

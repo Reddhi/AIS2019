@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".registration.RegistrationAboutFragment"
+android:background="@color/colorBackground">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_about_1"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="start"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/image_border"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/registration_about_2"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorGrayDark"
+        android:textSize="16sp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="5"
+        android:layout_gravity="center"
+        android:background="@drawable/table_border"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:text="@string/registration_grid_00"
+            android:background="@drawable/image_border"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:text="@string/registration_grid_01"
+            android:background="@drawable/image_border"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayDark"
+            android:text="@string/registration_grid_10"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayDark"
+            android:text="@string/registration_grid_11"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayDark"
+            android:text="@string/registration_grid_20"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayDark"
+            android:text="@string/registration_grid_21"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayDark"
+            android:text="@string/registration_grid_30"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayDark"
+            android:text="@string/registration_grid_31"
+            />
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="5"
+        android:layout_gravity="center"
+        android:background="@drawable/table_border"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:text="@string/registration_grid_2"
+            android:background="@drawable/image_border"
+            android:layout_columnSpan="2" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayDark"
+            android:text="@string/registration_grid_2_00"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayDark"
+            android:text="@string/registration_grid_2_01"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayDark"
+            android:text="@string/registration_grid_2_10"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayDark"
+            android:text="@string/registration_grid_2_11"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayDark"
+            android:text="@string/registration_grid_2_20"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrayDark"
+            android:text="@string/registration_grid_2_21"
+            />
+
+    </GridLayout>
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registration.RegistrationPaymentFragment"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="8"
+            android:layout_gravity="center"
+            android:background="@drawable/table_border"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:text="@string/registration_payment_header"
+                android:background="@drawable/image_border"
+                android:layout_columnSpan="2" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/registration_payment_grid_00"
+                android:padding="3dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/registration_payment_grid_01"
+                android:padding="3dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/registration_payment_grid_10"
+                android:padding="3dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/registration_payment_grid_11"
+                android:padding="3dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/registration_payment_grid_20"
+                android:padding="3dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/registration_payment_grid_21"
+                android:padding="3dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/registration_payment_grid_30"
+                android:padding="3dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/registration_payment_grid_31"
+                android:padding="3dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/registration_payment_grid_40"
+                android:padding="3dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/registration_payment_grid_41"
+                android:padding="3dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/registration_payment_grid_50"
+                android:padding="3dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/registration_payment_grid_51"
+                android:padding="3dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/registration_payment_grid_60"
+                android:padding="3dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/registration_payment_grid_61"
+                android:padding="3dp"
+                android:textStyle="bold"/>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

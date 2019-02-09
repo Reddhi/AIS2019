@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground"
+    tools:context=".schedule.ScheduleFragment"
+    android:orientation="vertical">
+
+    <com.viewpagerindicator.TitlePageIndicator
+        android:id="@+id/schedule_titles"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        app:footerColor="@color/colorPrimaryLight"
+        android:textSize="14sp"
+        app:titlePadding="2dp"
+        app:topPadding="2dp"
+        android:padding="10dip"
+        app:footerLineHeight="1dp"
+        app:footerIndicatorHeight="3dp"
+        app:footerIndicatorStyle="underline"
+        app:selectedColor="@color/colorAccent"
+        app:selectedBold="true"
+        style="@style/CustomTitlePageIndicator"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/schedule_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

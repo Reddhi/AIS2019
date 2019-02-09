@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registration.RegistrationAccommodationFragment"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accommodation_header"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="start"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/image_border"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/accommodation_rules_1"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/accommodation_grid_header"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/image_border"
+            android:textSize="14sp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/accommodation_recycler_view"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/accommodation_rules_2"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/royal_orchid"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/button_border"
+                android:padding="10dp"
+                android:text="@string/royal_orchid"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:drawableEnd="@drawable/round_contact_phone_white_18dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:id="@+id/itc_windsor"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/button_border"
+                android:padding="10dp"
+                android:text="@string/itc_windsor"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:drawableEnd="@drawable/round_contact_phone_white_18dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:id="@+id/le_meridien"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/button_border"
+                android:padding="10dp"
+                android:text="@string/le_meridien"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:drawableEnd="@drawable/round_contact_phone_white_18dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:id="@+id/the_park"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/button_border"
+                android:padding="10dp"
+                android:text="@string/the_park"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:drawableEnd="@drawable/round_contact_phone_white_18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

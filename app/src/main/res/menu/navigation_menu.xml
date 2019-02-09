@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="@string/home"/>
+
+    <item android:id="@+id/message_from_chairman"
+        android:title="@string/message_from_chairman"/>
+
+    <item android:id="@+id/seminar"
+        android:title="@string/seminar"/>
+
+    <item android:id="@+id/schedule"
+        android:title="@string/schedule"/>
+
+    <item android:id="@+id/registration"
+        android:title="@string/registration"/>
+
+    <item android:id="@+id/sponsorship"
+        android:title="@string/sponsorship"/>
+
+    <item android:id="@+id/venue"
+        android:title="@string/venue"/>
+
+    <item android:id="@+id/contact"
+        android:title="@string/contact"/>
+
+    <item android:id="@+id/faq"
+        android:title="@string/faq"/>
+
+</menu>
