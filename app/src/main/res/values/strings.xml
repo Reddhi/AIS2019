@@ -93,38 +93,40 @@
     </string-array>
 
     <string-array name="participating_organizations">
-        <item>Aeronautical Development Establishment, DRDO, Bengaluru, India</item>
-        <item>Air Force Research Laboratory, Wright-Patterson Air Force Base, Ohio, USA</item>
-        <item>Boeing India, Bengaluru, India</item>
-        <item>BAE Systems, UK</item>
+        <item>Aeronautical Development Establishment, DRDO, Bangalore,India</item>
+        <item>Air Force Research Laboratory, Wright-Patterson Air Force Base,Ohio, USA</item>
+        <item>Boeing (R&amp;T) – India, Bangalore, India</item>
         <item>Central Institute of Aviation Motors, Russia</item>
+        <item>Centre for Airborne Systems, DRDO, Bangalore, India</item>
+        <item>Council of Scientific &amp; Industrial Research – National Aerospace Laboratories (CSIR-NAL), Bangalore, India</item>
         <item>National Centre for Space Studies (CNES), France</item>
         <item>Dassault Systèmes, France</item>
-        <item>Defence Avionics Research Establishment, DRDO, Bengaluru, India</item>
-        <item>Electronics Radar Development Establishment, DRDO, Bengaluru, India</item>
-        <item>General Electric Aviation, Bengaluru, India</item>
-        <item>IBM India, Bengaluru, India</item>
-        <item>Indian Air Force</item>
-        <item>Indian Army</item>
-        <item>Indian Navy</item>
+        <item>Defence Avionics Research Establishment, DRDO, Bangalore, India</item>
+        <item>Electronics &amp; Radar Development Establishment, DRDO, Bangalore, India</item>
+        <item>General Electric Aviation, USA</item>
+        <item>Hensoldt Sensors GmbH, Germany</item>
+        <item>IBM India, Bangalore, India</item>
+        <item>Indian Armed Forces</item>
         <item>Indian Institute of Technology Madras, India</item>
-        <item>Indian Institute of Science, Bengaluru, India</item>
-        <item>Indian Space Research Organisation, Bengaluru, India</item>
+        <item>Indian Institute of Science, Bangalore, India</item>
+        <item>Indian Space Research Organisation, Bangalore, India</item>
+        <item>Indian Space Research Organisation, Trivandrum, India</item>
         <item>Larsen &amp; Toubro, Mumbai, India</item>
         <item>Life Prediction Technologies Inc., Ottawa, Canada</item>
         <item>MBDA Missile Systems, France</item>
         <item>Mishra Dhatu Nigam Limited, Hyderabad, India</item>
         <item>Madras Institute of Technology, Chennai, India</item>
-        <item>Iskra, Russia</item>
+        <item>Optimare Systems GmbH, Germany</item>
         <item>Pratt &amp; Whitney, USA</item>
         <item>Presagis Inc., Canada</item>
-        <item>Research Centre Imarat,DRDO, Hyderabad, India</item>
+        <item>Research Centre Imarat, DRDO, Hyderabad, India</item>
         <item>Rolls Royce, UK</item>
+        <item>Siemens AG, Germany</item>
+        <item>Siemens Industry Software (India) Private Limited, Bangalore, India</item>
         <item>Thales Defence Mission Systems, France</item>
-        <item>United Engine Corporation, Russia</item>
+        <item>United Engine Corporation – Klimov, Russia</item>
         <item>Vikram Sarabhai Space Centre, India</item>
     </string-array>
-
 
     <string name="message_from_chairman_text_1">DRDO is privileged to organize the 12th Aero India International Seminar on the theme “Emerging Frontiers in Aerospace Technologies“.</string>
     <string name="message_from_chairman_text_2">In the light of rapid advances in Science &amp; Technology, and India’s quest to emerge as a world leader, concerted efforts of all stakeholders is a prerogative. Government of India is providing the necessary thrust to self-reliance and skill development through various programmes and policies. Seminars such as this will help accelerate this process.</string>
@@ -138,7 +140,7 @@
     <string name="about_text_4">AIS-2019 is of great importance and of global significance, wherein eminent speakers in the field of aerospace, science and technology are invited from all over the world.</string>
 
     <string name="registration_about_1">Registration Information</string>
-    <string name="registration_about_2">1. Spot Registration at the venue is not permitted.\n2. Online Registration is currently not permitted.\n3. Cancellation, transfer or refund of registration fee paid is not allowed.\n4. For any assistance, kindly mail to registration@aeroindiaseminar.com.\n5. Individuals can register either as DRDO delegate / Industry delegate/ Academia delegate(Teaching professional) /  Student delegate as per registration mode listed underneath.</string>
+    <string name="registration_about_2">1. Spot Registration at the venue is not permitted.\n2. Online Registration is currently available for Student and Private Industry/Academic Faculty Delegates.\n3. Cancellation, transfer or refund of registration fee paid is not allowed.\n4. For any assistance, kindly mail to registration@aeroindiaseminar.com.\n5. Individuals can register either as DRDO delegate / Industry delegate/ Academia delegate(Teaching professional) /  Student delegate as per registration mode listed underneath.</string>
     <string name="registration_grid_00">Delegate Type</string>
     <string name="registration_grid_01">Registration Mode</string>
     <string name="registration_grid_10">DRDO Delegate</string>
