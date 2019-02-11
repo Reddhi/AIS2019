@@ -237,8 +237,12 @@
     <string name="con_reg_name_2">Shri Prasant Kumar Panda</string>
     <string name="con_reg_mob_2">+91 9900840226</string>
     <string name="con_accommodation">Accommodation</string>
-    <string name="con_acc_name_1">Shri G Ramesh</string>
+    <string name="con_acc_name_1">Dr. G Ramesh</string>
     <string name="con_acc_mob_1">+91 8970028500</string>
+    <string name="con_acc_name_2">Shri Santhosh</string>
+    <string name="con_acc_mob_2">+91 9341374650 </string>
+    <string name="con_acc_name_3">Shri Bhoopathy</string>
+    <string name="con_acc_mob_3">+91  9448012107</string>
     <string name="con_transport">Transport</string>
     <string name="con_trans_name_1">Shri. Saravanan K</string>
     <string name="con_trans_mob_1">+91 9611778474</string>
@@ -246,7 +250,7 @@
     <string name="con_trans_mob_2">+919742726790</string>
     <string name="con_trans_name_3">Shri. Sivanathan</string>
     <string name="con_trans_mob_3">+91 9590906010</string>
-    <string name="con_trans_name_4">Shri. T RajaMob</string>
+    <string name="con_trans_name_4">Shri. T Raja</string>
     <string name="con_trans_mob_4">+91 9448855723</string>
     <string name="con_website">Web Site /Android App</string>
     <string name="con_web_name_1">Ajith V</string>
