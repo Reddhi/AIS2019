@@ -58,19 +58,63 @@ public class DayTwoFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_day_two, container, false);
         rv = view.findViewById(R.id.day_two_recycler_view);
         rv.setLayoutManager(new LinearLayoutManager(mContext));
-        final DatabaseReference myRef = FirebaseDatabaseUtility.getDatabase().getReference("schedule/19022019");
-        final Query eventQuery = myRef.orderByKey();
+        DatabaseReference myRef = FirebaseDatabaseUtility.getDatabase().getReference("events");
+        final Query eventQuery = myRef.orderByChild("order");
         eventQuery.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot eventSnapshot) {
                 events = new ArrayList<>();
                 for (DataSnapshot dataSnapshot : eventSnapshot.getChildren()) {
                     SeminarEvent data = dataSnapshot.getValue(SeminarEvent.class);
-                    events.add(data);
+                    ArrayList<SeminarSpeaker> speakers = new ArrayList<>();
+                    if(data.getDate().equals("19/02/19")){
+                        if(data.getSpeaker() != null){
+                            SeminarSpeaker s = data.getSpeaker();
+                            String name = s.getName();
+                            String pos = s.getPosition();
+                            String dp = s.getDisplayPicture();
+                            String names1[] = name.split(" &&& ");
+                            String poss1[] = pos.split(" &&& ");
+                            String dps1[] = dp.split(" &&& ");
+                            for(int i=0; i< names1.length; i++){
+                                if(names1[i].contains("&&")){
+                                    String names2[] = names1[i].split(" && ");
+                                    String dps2[] = dps1[i].split(" && ");
+                                    String pos2 = poss1[i].replace(" && ", "\n");
+                                    for(int j=0; j<names2.length; j++){
+                                        SeminarSpeaker spk = new SeminarSpeaker();
+                                        spk.setName(names2[j]);
+                                        spk.setDisplayPicture(dps2[j]);
+                                        spk.setPosition(pos2);
+                                        spk.setTalkDate(data.getDate());
+                                        spk.setTalkId(data.getId());
+                                        spk.setTalkType(data.getType());
+                                        spk.setTalkLocation(data.getLocation());
+                                        spk.setTalkTime(data.getStartTime()+" - "+data.getEndTime());
+                                        spk.setTalkTitle(data.getTitle());
+                                        speakers.add(spk);
+                                    }
+                                } else {
+                                    SeminarSpeaker spk = new SeminarSpeaker();
+                                    spk.setName(names1[i]);
+                                    spk.setDisplayPicture(dps1[i]);
+                                    spk.setPosition(poss1[i]);
+                                    spk.setTalkDate(data.getDate());
+                                    spk.setTalkId(data.getId());
+                                    spk.setTalkType(data.getType());
+                                    spk.setTalkLocation(data.getLocation());
+                                    spk.setTalkTime(data.getStartTime()+" - "+data.getEndTime());
+                                    spk.setTalkTitle(data.getTitle());
+                                    speakers.add(spk);
+                                }
+                            }
+                        }
+                        data.setSpeakersList(speakers);
+                        events.add(data);
+                    }
                 }
                 adapter = new SeminarDayRecyclerViewAdapter(mContext, events);
                 rv.setAdapter(adapter);
-
             }
 
             @Override
