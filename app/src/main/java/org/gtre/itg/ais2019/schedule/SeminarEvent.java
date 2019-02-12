@@ -1,15 +1,21 @@
 package org.gtre.itg.ais2019.schedule;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class SeminarEvent implements Serializable{
 
     private String id;
     private String title;
+    private String theme;
+    private int order;
+    private String date;
     private String startTime;
     private String endTime;
     private String location;
     private String type;
+    private SeminarSpeaker speaker;
+    private ArrayList<SeminarSpeaker> speakersList;
 
     public SeminarEvent() {
     }
@@ -67,5 +73,45 @@ public class SeminarEvent implements Serializable{
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getTheme() {
+        return theme;
+    }
+
+    public void setTheme(String theme) {
+        this.theme = theme;
+    }
+
+    public int getOrder() {
+        return order;
+    }
+
+    public void setOrder(int order) {
+        this.order = order;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public SeminarSpeaker getSpeaker() {
+        return speaker;
+    }
+
+    public void setSpeaker(SeminarSpeaker speaker) {
+        this.speaker = speaker;
+    }
+
+    public ArrayList<SeminarSpeaker> getSpeakersList() {
+        return speakersList;
+    }
+
+    public void setSpeakersList(ArrayList<SeminarSpeaker> speakersList) {
+        this.speakersList = speakersList;
     }
 }

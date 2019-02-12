@@ -8,6 +8,7 @@
     <string name="message_from_chairman">Message From Chairman</string>
     <string name="seminar">Seminar</string>
     <string name="schedule">Programme Schedule</string>
+    <string name="speakers">Speakers</string>
     <string name="registration">Registration</string>
     <string name="sponsorship">Sponsorship</string>
     <string name="venue">Venue</string>
@@ -308,10 +309,12 @@
     <string name="cd_ad_price_2">\u20B9 1,00,000/-</string>
     <string name="cd_ad_category_3">CD Paper / Card Cover- Back Side</string>
     <string name="cd_ad_price_3">\u20B9 1,00,000/-</string>
-    
+
     <string name="online_registration_header">Online Registration</string>
     <string name="online_registration_text">Online Registration for Student Delegates, Private Industry Delegates and Academic Faculty Delegates is currently available only through the official website <i>www.aeroindiaseminar.com</i></string>
     <string name="online_registration_button">Redirect To Website</string>
+
+    <string name="speakers_list">List of Speakers</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Page Under Construction.</string>
 </resources>

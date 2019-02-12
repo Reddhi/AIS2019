@@ -13,6 +13,9 @@
     <item android:id="@+id/schedule"
         android:title="@string/schedule"/>
 
+    <item android:id="@+id/speakers"
+        android:title="@string/speakers"/>
+
     <item android:id="@+id/registration"
         android:title="@string/registration"/>
 

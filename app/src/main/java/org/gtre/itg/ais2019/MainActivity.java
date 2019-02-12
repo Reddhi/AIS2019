@@ -1,9 +1,5 @@
 package org.gtre.itg.ais2019;
 
-import android.app.Activity;
-import android.os.Handler;
-import android.os.Looper;
-import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -13,25 +9,17 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
-
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.Query;
-import com.google.firebase.database.ValueEventListener;
 
 import org.gtre.itg.ais2019.faq.FAQFragment;
 import org.gtre.itg.ais2019.registration.RegistrationFragment;
 import org.gtre.itg.ais2019.schedule.ScheduleFragment;
 import org.gtre.itg.ais2019.schedule.SeminarEvent;
 import org.gtre.itg.ais2019.seminar.SeminarFragment;
+import org.gtre.itg.ais2019.schedule.SpeakersFragment;
 import org.gtre.itg.ais2019.sponsorship.SponsorshipFragment;
 
 import java.util.ArrayList;
-
-import static android.content.ContentValues.TAG;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -60,26 +48,6 @@ public class MainActivity extends AppCompatActivity {
         setupDrawerContent(navigationView);
         mFragmentManager = getSupportFragmentManager();
         setInitialFragment();
-
-
-        DatabaseReference myRef = FirebaseDatabaseUtility.getDatabase().getReference("schedule/18022019");
-        final Query eventQuery = myRef.orderByKey();
-        eventQuery.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot eventSnapshot) {
-                events = new ArrayList<>();
-                for (DataSnapshot dataSnapshot : eventSnapshot.getChildren()) {
-                    SeminarEvent data = dataSnapshot.getValue(SeminarEvent.class);
-                    events.add(data);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                // Failed to read value
-                Log.w(TAG, "Failed to read value.", error.toException());
-            }
-        });
 
     }
 
@@ -120,6 +88,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.schedule:
                 fragmentClass = ScheduleFragment.class;
+                break;
+            case R.id.speakers:
+                fragmentClass = SpeakersFragment.class;
                 break;
             case R.id.registration:
                 fragmentClass = RegistrationFragment.class;
