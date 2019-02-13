@@ -34,8 +34,7 @@ public class DayOneFragment extends Fragment {
 
     public DayOneFragment() {
         // Required empty public constructor
-        mContext = this.getContext();
-        events = new ArrayList<>();
+
     }
 
     public static DayOneFragment newInstance(int page, String title) {
@@ -46,7 +45,8 @@ public class DayOneFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        mContext = this.getContext();
+        events = new ArrayList<>();
     }
 
     @Override

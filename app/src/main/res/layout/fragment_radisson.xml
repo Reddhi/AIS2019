@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".registration.LeMeridienFragment"
+    tools:context=".registration.RadissonFragment"
     android:background="@color/colorBackground"
     android:orientation="vertical"
     android:weightSum="10">
@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="4"
+        android:layout_weight="3"
         android:background="@drawable/image_border"
         android:paddingStart="60dp"
         android:paddingEnd="3dp"
@@ -29,19 +29,10 @@
             android:orientation="vertical"
             android:paddingBottom="10dp">
 
-            <com.mikhaellopez.circularimageview.CircularImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/le_meridien"
-                app:civ_border_color="@color/colorAccent"
-                app:civ_border_width="3dp"
-                app:civ_shadow="true"
-                app:civ_shadow_radius="1"
-                app:civ_shadow_color="#8BC34A"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/le_meridien"
+                android:text="@string/radisson"
                 android:textSize="20sp"
                 android:textColor="@color/colorWhite"
                 android:textStyle="bold"
@@ -63,7 +54,7 @@
             android:gravity="end|top">
 
             <ImageView
-                android:id="@+id/le_meridien_close"
+                android:id="@+id/radisson_close"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end|top"
@@ -78,7 +69,7 @@
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="6"
+        android:layout_weight="7"
         android:columnCount="2"
         android:rowCount="6"
         android:paddingTop="20dp"
@@ -96,7 +87,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/lm_address"
+            android:text="@string/rd_address"
             android:layout_row="0"
             android:layout_column="1"
             android:textColor="@color/colorPrimaryDark"
@@ -117,7 +108,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/lm_phone"
+            android:text="@string/rd_phone"
             android:layout_row="1"
             android:layout_column="1"
             android:textColor="@color/colorPrimaryDark"
@@ -138,7 +129,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/lm_email"
+            android:text="@string/rd_email"
             android:layout_row="2"
             android:layout_column="1"
             android:textColor="@color/colorPrimaryDark"

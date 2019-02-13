@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import org.gtre.itg.ais2019.contact.ContactFragment;
 import org.gtre.itg.ais2019.faq.FAQFragment;
 import org.gtre.itg.ais2019.registration.RegistrationFragment;
 import org.gtre.itg.ais2019.schedule.ScheduleFragment;

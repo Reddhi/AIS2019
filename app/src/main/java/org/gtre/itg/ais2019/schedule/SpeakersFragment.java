@@ -27,15 +27,13 @@ import static android.content.ContentValues.TAG;
 
 public class SpeakersFragment extends Fragment {
 
-    private ArrayList<SeminarSpeaker> speakers;
+    private ArrayList<SeminarSpeaker> speakers, pSpeakers;
     private Context mContext;
     private RecyclerView rv;
     private SeminarSpeakersRecyclerViewAdapter adapter;
 
     public SpeakersFragment() {
         // Required empty public constructor
-        mContext = this.getContext();
-        speakers = new ArrayList<>();
     }
 
     public static SpeakersFragment newInstance(int page, String title) {
@@ -46,12 +44,14 @@ public class SpeakersFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_speakers, container, false);
+        mContext = this.getActivity().getBaseContext();
+        speakers = new ArrayList<>();
+        pSpeakers = new ArrayList<>();
         rv = view.findViewById(R.id.speakers_recycler_view);
         rv.setLayoutManager(new LinearLayoutManager(mContext));
         DatabaseReference myRef = FirebaseDatabaseUtility.getDatabase().getReference("events");
@@ -60,6 +60,7 @@ public class SpeakersFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot eventSnapshot) {
                 speakers = new ArrayList<>();
+                pSpeakers = new ArrayList<>();
                 for (DataSnapshot dataSnapshot : eventSnapshot.getChildren()) {
                     SeminarEvent data = dataSnapshot.getValue(SeminarEvent.class);
                     if(data.getSpeaker() != null){
@@ -86,7 +87,11 @@ public class SpeakersFragment extends Fragment {
                                     spk.setTalkLocation(data.getLocation());
                                     spk.setTalkTime(data.getStartTime()+" - "+data.getEndTime());
                                     spk.setTalkTitle(data.getTitle());
-                                    speakers.add(spk);
+                                    if(data.getType().equals("Plenary")){
+                                        pSpeakers.add(spk);
+                                    } else {
+                                        speakers.add(spk);
+                                    }
                                 }
                             } else {
                                 SeminarSpeaker spk = new SeminarSpeaker();
@@ -99,13 +104,17 @@ public class SpeakersFragment extends Fragment {
                                 spk.setTalkLocation(data.getLocation());
                                 spk.setTalkTime(data.getStartTime()+" - "+data.getEndTime());
                                 spk.setTalkTitle(data.getTitle());
-                                speakers.add(spk);
+                                if(data.getType().equals("Plenary")){
+                                    pSpeakers.add(spk);
+                                } else {
+                                    speakers.add(spk);
+                                }
                             }
                         }
                     }
                 }
-
-                adapter = new SeminarSpeakersRecyclerViewAdapter(mContext, speakers);
+                pSpeakers.addAll(speakers);
+                adapter = new SeminarSpeakersRecyclerViewAdapter(mContext, pSpeakers);
                 rv.setAdapter(adapter);
             }
 

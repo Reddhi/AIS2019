@@ -56,8 +56,10 @@ public class RegistrationAccommodationFragment extends Fragment {
         rv.setAdapter(adapter);
         TextView royalOrchid = view.findViewById(R.id.royal_orchid);
         TextView itcWindsor = view.findViewById(R.id.itc_windsor);
-        TextView leMeridien = view.findViewById(R.id.le_meridien);
+        TextView radisson = view.findViewById(R.id.radisson);
         TextView thePark = view.findViewById(R.id.the_park);
+        TextView citrus = view.findViewById(R.id.citrus);
+        TextView ynHotel = view.findViewById(R.id.yn_hotel);
         royalOrchid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,13 +78,13 @@ public class RegistrationAccommodationFragment extends Fragment {
                 dialogFragment.show(fm, "ITC Windsor");
             }
         });
-        leMeridien.setOnClickListener(new View.OnClickListener() {
+        radisson.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentManager fm = getActivity().getSupportFragmentManager();
-                LeMeridienFragment dialogFragment = LeMeridienFragment.newInstance("Le Meridien");
+                RadissonFragment dialogFragment = RadissonFragment.newInstance("Radisson");
                 dialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.Dialog_FullScreen);
-                dialogFragment.show(fm, "Le Meridien");
+                dialogFragment.show(fm, "Radisson");
             }
         });
         thePark.setOnClickListener(new View.OnClickListener() {
@@ -92,6 +94,24 @@ public class RegistrationAccommodationFragment extends Fragment {
                 TheParkFragment dialogFragment = TheParkFragment.newInstance("The Park");
                 dialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.Dialog_FullScreen);
                 dialogFragment.show(fm, "The Park");
+            }
+        });
+        citrus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fm = getActivity().getSupportFragmentManager();
+                CitrusFragment dialogFragment = CitrusFragment.newInstance("Citrus Hotel");
+                dialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.Dialog_FullScreen);
+                dialogFragment.show(fm, "Citrus Hotel");
+            }
+        });
+        ynHotel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fm = getActivity().getSupportFragmentManager();
+                YNHotelFragment dialogFragment = YNHotelFragment.newInstance("Y N Hotel");
+                dialogFragment.setStyle(DialogFragment.STYLE_NORMAL, R.style.Dialog_FullScreen);
+                dialogFragment.show(fm, "Y N Hotel");
             }
         });
         return view;

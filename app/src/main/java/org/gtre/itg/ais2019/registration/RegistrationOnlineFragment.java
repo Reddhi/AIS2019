@@ -31,7 +31,7 @@ public class RegistrationOnlineFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_registration_online, container, false);
-        TextView onlineButton = view.findViewById(R.id.online_registration_button);
+        /*TextView onlineButton = view.findViewById(R.id.online_registration_button);
         onlineButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,7 +43,7 @@ public class RegistrationOnlineFragment extends Fragment {
                     e.printStackTrace();
                 }
             }
-        });
+        });*/
         return view;
     }
 

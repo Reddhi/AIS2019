@@ -30,7 +30,7 @@ public class SeminarPORecyclerViewAdapter extends RecyclerView.Adapter<SeminarPO
     @Override
     public SeminarPORecyclerViewAdapter.SeminarPOViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.item_rv_without_details, parent, false);
+        View view = inflater.inflate(R.layout.item_rv_organizations, parent, false);
 
         return new SeminarPORecyclerViewAdapter.SeminarPOViewHolder(view);
     }

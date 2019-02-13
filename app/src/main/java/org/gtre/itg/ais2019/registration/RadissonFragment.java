@@ -13,15 +13,15 @@ import android.widget.ImageView;
 
 import org.gtre.itg.ais2019.R;
 
-public class LeMeridienFragment extends DialogFragment {
+public class RadissonFragment extends DialogFragment {
 
 
-    public LeMeridienFragment() {
+    public RadissonFragment() {
         // Required empty public constructor
     }
 
-    public static LeMeridienFragment newInstance(String title) {
-        LeMeridienFragment frag = new LeMeridienFragment();
+    public static RadissonFragment newInstance(String title) {
+        RadissonFragment frag = new RadissonFragment();
         Bundle args = new Bundle();
         args.putString("title", title);
         frag.setArguments(args);
@@ -32,14 +32,14 @@ public class LeMeridienFragment extends DialogFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_le_meridien, container, false);
+        return inflater.inflate(R.layout.fragment_radisson, container, false);
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         // Get field from view
-        ImageView closeButton = view.findViewById(R.id.le_meridien_close);
+        ImageView closeButton = view.findViewById(R.id.radisson_close);
         closeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,7 +47,7 @@ public class LeMeridienFragment extends DialogFragment {
             }
         });
         // Fetch arguments from bundle and set title
-        String title = getArguments().getString("title", getResources().getString(R.string.le_meridien));
+        String title = getArguments().getString("title", getResources().getString(R.string.radisson));
         getDialog().setTitle(title);
         getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 

@@ -44,14 +44,6 @@
                 android:textColor="@color/colorWhite"
                 android:textStyle="bold"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/distance_0"
-                android:textColor="@color/colorWhite"
-                android:textSize="12sp"
-                />
-
         </LinearLayout>
     </LinearLayout>
 
