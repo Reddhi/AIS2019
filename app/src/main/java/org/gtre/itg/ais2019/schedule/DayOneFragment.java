@@ -63,8 +63,8 @@ public class DayOneFragment extends Fragment {
                 for (DataSnapshot dataSnapshot : eventSnapshot.getChildren()) {
                     SeminarEvent data = dataSnapshot.getValue(SeminarEvent.class);
                     ArrayList<SeminarSpeaker> speakers = new ArrayList<>();
-                    if(data.getDate().equals("18/02/19")){
-                        if(data.getSpeaker() != null){
+                    if(data.getDate().equals("18/02/19")) {
+                        if ((data.getType().equals("Plenary") || data.getType().equals("Invited")) && data.getSpeaker() != null) {
                             SeminarSpeaker s = data.getSpeaker();
                             String name = s.getName();
                             String pos = s.getPosition();
@@ -72,12 +72,12 @@ public class DayOneFragment extends Fragment {
                             String names1[] = name.split(" &&& ");
                             String poss1[] = pos.split(" &&& ");
                             String dps1[] = dp.split(" &&& ");
-                            for(int i=0; i< names1.length; i++){
-                                if(names1[i].contains("&&")){
+                            for (int i = 0; i < names1.length; i++) {
+                                if (names1[i].contains("&&")) {
                                     String names2[] = names1[i].split(" && ");
                                     String dps2[] = dps1[i].split(" && ");
                                     String pos2 = poss1[i].replace(" && ", "\n");
-                                    for(int j=0; j<names2.length; j++){
+                                    for (int j = 0; j < names2.length; j++) {
                                         SeminarSpeaker spk = new SeminarSpeaker();
                                         spk.setName(names2[j]);
                                         spk.setDisplayPicture(dps2[j]);
@@ -86,7 +86,7 @@ public class DayOneFragment extends Fragment {
                                         spk.setTalkId(data.getId());
                                         spk.setTalkType(data.getType());
                                         spk.setTalkLocation(data.getLocation());
-                                        spk.setTalkTime(data.getStartTime()+" - "+data.getEndTime());
+                                        spk.setTalkTime(data.getStartTime() + " - " + data.getEndTime());
                                         spk.setTalkTitle(data.getTitle());
                                         speakers.add(spk);
                                     }
@@ -99,7 +99,7 @@ public class DayOneFragment extends Fragment {
                                     spk.setTalkId(data.getId());
                                     spk.setTalkType(data.getType());
                                     spk.setTalkLocation(data.getLocation());
-                                    spk.setTalkTime(data.getStartTime()+" - "+data.getEndTime());
+                                    spk.setTalkTime(data.getStartTime() + " - " + data.getEndTime());
                                     spk.setTalkTitle(data.getTitle());
                                     speakers.add(spk);
                                 }
