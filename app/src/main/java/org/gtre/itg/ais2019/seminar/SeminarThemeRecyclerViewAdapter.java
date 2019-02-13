@@ -31,7 +31,7 @@ public class SeminarThemeRecyclerViewAdapter extends RecyclerView.Adapter<Semina
     @Override
     public SeminarThemeViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.item_rv_with_details, parent, false);
+        View view = inflater.inflate(R.layout.item_rv_faq, parent, false);
 
         return new SeminarThemeViewHolder(view);
     }

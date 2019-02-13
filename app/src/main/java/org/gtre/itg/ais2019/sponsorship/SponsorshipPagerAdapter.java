@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import org.gtre.itg.ais2019.registration.RegistrationPaymentFragment;
 
 public class SponsorshipPagerAdapter extends FragmentPagerAdapter {
-    private static int NUM_ITEMS = 3;
+    private static int NUM_ITEMS = 4;
 
     public SponsorshipPagerAdapter(FragmentManager fragmentManager) {
         super(fragmentManager);
@@ -23,11 +23,13 @@ public class SponsorshipPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position) {
-            case 0: // Fragment # 0 - This will show FirstFragment
+            case 0:
+                return  SponsorsFragment.newInstance(0, "2019 Sponsors");
+            case 1:
                 return SponsorshipOpportunitiesFragment.newInstance(0, "Opportunities");
-            case 1: // Fragment # 0 - This will show FirstFragment different title
+            case 2:
                 return SponsorshipAdvertisementFragment.newInstance(1, "Advertisement");
-            case 2: // Fragment # 0 - This will show FirstFragment different title
+            case 3:
                 return RegistrationPaymentFragment.newInstance(1, "Payment");
             default:
                 return null;
@@ -39,10 +41,12 @@ public class SponsorshipPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return "Opportunities";
+                return "Sponsors";
             case 1:
-                return "Advertisement";
+                return "Opportunities";
             case 2:
+                return "Advertisement";
+            case 3:
                 return "Payment";
             default:
                 return null;

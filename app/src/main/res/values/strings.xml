@@ -195,29 +195,47 @@
     <string name="accommodation_grid_30">Student Delegates</string>
     <string name="accommodation_grid_31">Own Arrangements</string>
     <string name="accommodation_rules_2">4. Delegates are requested to book the hotels well on time as the hotels are reported to be booked during February, being a peak season for conferences, tourism etc.\n5. Delegates are requested to make their own arrangements for transport to reach the Venue.</string>
+
     <string name="royal_orchid">Royal Orchid Resorts &amp; Convention Center</string>
     <string name="itc_windsor">ITC Windsor</string>
-    <string name="le_meridien">Le M\u00E9ridien Bangalore</string>
+    <string name="radisson">Radisson BLU Atria Bangalore</string>
+    <string name="citrus">Citrus Hotel Bangalore</string>
     <string name="the_park">The Park Bangalore</string>
+    <string name="yn_hotel">Y N Hotel Bangalore</string>
+
     <string name="distance_0">Distance from Venue: 0 km</string>
     <string name="distance_13">Distance from Venue: 13 km</string>
     <string name="distance_15">Distance from Venue: 15 km</string>
     <string name="distance_20">Distance from Venue: 20 km</string>
+    <string name="distance_25">Distance from Venue: 25 km</string>
+
     <string name="ro_address">Allalasandra, Bellary Road,\nNear Jakkur Flying Club\nYelahanka, Bengaluru - 560065</string>
     <string name="ro_phone">+91 9902000107(Mobile)\n+91 80 2856 0668(Tel)\n+91 80 2856 0671(Facsimile)</string>
     <string name="ro_email">sales3@royalorchidhotels.com</string>
     <string name="ro_web">www.royalorchidhotels.com</string>
+
     <string name="itc_address">25, Windsor Square,\nGolf Course Road\nBengaluru – 560052</string>
     <string name="itc_phone">+91 9874699021(Mobile)\n++91 80 2226 9898(Tel)\n+91 80 2226 4941(Facsimile)</string>
     <string name="itc_email">sarbani.chakraborty@itchotels.in</string>
-    <string name="lm_address">28 Sankey Road\nPb: No 174\nBengaluru - 560052</string>
-    <string name="lm_phone">+91 9900247226(Mobile)\n+91 80 22262233(Tel)\n+91 80 22262052(Facsimile)</string>
-    <string name="lm_email">sales1@lemeridienbangalore.com</string>
+
+    <string name="rd_address">Mr Harish Kumar\nRadisson BLU Atria Bangalore,\n1 Palace Road,\nBengaluru 560001\nPb: No 174\nBengaluru 560052</string>
+    <string name="rd_phone">+91 7338686092(Mobile)\n+91 80 2220 5205(Tel)\n+91 80 2264 2620(Facsimile)</string>
+    <string name="rd_email">sales4blr@rdbengaluru.com</string>
+
     <string name="tp_address">14/7 MG Road\nBengaluru - 560042</string>
-    <string name="tp_phone">+91 9108887048(Mobile)\n+91 80 25594666 (Tel)\n+91 80 25594667(Facsimile)</string>
+    <string name="tp_phone">+91 9108887048(Mobile)\n+91 80 2559 4666 (Tel)\n+91 80 2559 4667(Facsimile)</string>
     <string name="tp_email">mksingh@theparkhotels.com</string>
+
+    <string name="ch_address">Mr Rajbansh Mohanty\nCitrus Hotel,\n34 Cunningham Road,\nBengaluru 560052</string>
+    <string name="ch_phone">+91 7022006104(Mobile)\n+91 80 2559 4666(Tel)\n+91 80 4539 0102(Facsimile)</string>
+    <string name="ch_email">rajbansh.mohanty@citrushotels.in</string>
+
+    <string name="yn_address">Selvaraj L N,\nY N Hotel,\nNo 5 Old Madras Road,\nNear K R Puram Bus Stop,\nBengaluru 560036</string>
+    <string name="yn_phone">+91 8884459044(Mobile)\n+91 8197299564(Mobile)\n+91 80 6813 1919(Tel)\n+91 80 2559 4667(Facsimile)</string>
+    <string name="yn_email">sales@ynhotels.in\nreservations@ynhotels.in</string>
+
     <string name="venue_address">Allalasandra,\nBellary Road,\nNear Jakkur Flying Club\nYelahanka,\nBengaluru - 560065</string>
-    <string name="venue_phone">+91 80 2856 0668 (Tel)\n+91 80 2856 0669 (Tel)\n+91 7022878566 (Mobile)</string>
+    <string name="venue_phone">+91 80 2856 0668 (Tel)\n+91 80 2856 0669 (Tel)\n+91 70228 78566 (Mobile)</string>
     <string-array name="accommodation_delegate_categories">
         <item>DRDO Delegates</item>
         <item>Non DRDO Delegates</item>
@@ -311,10 +329,13 @@
     <string name="cd_ad_price_3">\u20B9 1,00,000/-</string>
 
     <string name="online_registration_header">Online Registration</string>
-    <string name="online_registration_text">Online Registration for Student Delegates, Private Industry Delegates and Academic Faculty Delegates is currently available only through the official website <i>www.aeroindiaseminar.com</i></string>
-    <string name="online_registration_button">Redirect To Website</string>
+    <string name="online_registration_text">Online Registration for Student Delegates, Private Industry Delegates and Academic Faculty Delegates was available till 13th February 2019.</string>
+    <string name="online_registration_button">Online Registration is Closed</string>
 
     <string name="speakers_list">List of Speakers</string>
+
+    <string name="event_partner">Event Partner of AeSI</string>
+    <string name="ais_supported_by">AIS 2019 Supported By</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Page Under Construction.</string>
 </resources>

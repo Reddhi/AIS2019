@@ -1,7 +1,6 @@
 package org.gtre.itg.ais2019.schedule;
 
 import android.content.Context;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,9 +8,10 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.mikhaellopez.circularimageview.CircularImageView;
 
-import org.gtre.itg.ais2019.DownloadImageTask;
 import org.gtre.itg.ais2019.R;
 
 import java.util.ArrayList;
@@ -35,7 +35,7 @@ public class SeminarDayRecyclerViewAdapter extends RecyclerView.Adapter<SeminarD
     @Override
     public SeminarDayRecyclerViewAdapter.SeminarDayViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.item_rv_with_details_2, parent, false);
+        View view = inflater.inflate(R.layout.item_rv_events, parent, false);
         return new SeminarDayRecyclerViewAdapter.SeminarDayViewHolder(view);
     }
 
@@ -50,8 +50,17 @@ public class SeminarDayRecyclerViewAdapter extends RecyclerView.Adapter<SeminarD
         holder.speakerName1.setText(event.getSpeakersList().get(0).getName());
         holder.speakerPos1.setText(event.getSpeakersList().get(0).getPosition());
         if (event.getSpeakersList().get(0).getDisplayPicture() != null) {
-            new DownloadImageTask(holder.speakerDp1).execute(event.getSpeakersList().get(0).getDisplayPicture());
+            String url = event.getSpeakersList().get(0).getDisplayPicture();
+            RequestOptions requestOptions = new RequestOptions();
+            requestOptions.placeholder(R.drawable.user);
+            Glide.with(mContext)
+                    .setDefaultRequestOptions(requestOptions)
+                    .load(url)
+                    .into(holder.speakerDp1);
         } else {
+            // make sure Glide doesn't load anything into this view until told otherwise
+            Glide.with(mContext).clear(holder.speakerDp1);
+            // remove the placeholder (optional); read comments below
             holder.speakerDp1.setImageDrawable(null);
         }
         holder.speakerView1.setVisibility(View.VISIBLE);
@@ -60,8 +69,17 @@ public class SeminarDayRecyclerViewAdapter extends RecyclerView.Adapter<SeminarD
             holder.speakerName2.setText(event.getSpeakersList().get(1).getName());
             holder.speakerPos2.setText(event.getSpeakersList().get(1).getPosition());
             if (event.getSpeakersList().get(1).getDisplayPicture() != null) {
-                new DownloadImageTask(holder.speakerDp2).execute(event.getSpeakersList().get(1).getDisplayPicture());
+                String url = event.getSpeakersList().get(1).getDisplayPicture();
+                RequestOptions requestOptions = new RequestOptions();
+                requestOptions.placeholder(R.drawable.user);
+                Glide.with(mContext)
+                        .setDefaultRequestOptions(requestOptions)
+                        .load(url)
+                        .into(holder.speakerDp2);
             } else {
+                // make sure Glide doesn't load anything into this view until told otherwise
+                Glide.with(mContext).clear(holder.speakerDp2);
+                // remove the placeholder (optional); read comments below
                 holder.speakerDp2.setImageDrawable(null);
             }
             holder.speakerView2.setVisibility(View.VISIBLE);
@@ -71,8 +89,17 @@ public class SeminarDayRecyclerViewAdapter extends RecyclerView.Adapter<SeminarD
             holder.speakerName3.setText(event.getSpeakersList().get(2).getName());
             holder.speakerPos3.setText(event.getSpeakersList().get(2).getPosition());
             if (event.getSpeakersList().get(2).getDisplayPicture() != null) {
-                new DownloadImageTask(holder.speakerDp3).execute(event.getSpeakersList().get(2).getDisplayPicture());
+                String url = event.getSpeakersList().get(2).getDisplayPicture();
+                RequestOptions requestOptions = new RequestOptions();
+                requestOptions.placeholder(R.drawable.user);
+                Glide.with(mContext)
+                        .setDefaultRequestOptions(requestOptions)
+                        .load(url)
+                        .into(holder.speakerDp3);
             } else {
+                // make sure Glide doesn't load anything into this view until told otherwise
+                Glide.with(mContext).clear(holder.speakerDp3);
+                // remove the placeholder (optional); read comments below
                 holder.speakerDp3.setImageDrawable(null);
             }
             holder.speakerView3.setVisibility(View.VISIBLE);
@@ -82,11 +109,40 @@ public class SeminarDayRecyclerViewAdapter extends RecyclerView.Adapter<SeminarD
             holder.speakerName4.setText(event.getSpeakersList().get(3).getName());
             holder.speakerPos4.setText(event.getSpeakersList().get(3).getPosition());
             if (event.getSpeakersList().get(3).getDisplayPicture() != null) {
-                new DownloadImageTask(holder.speakerDp4).execute(event.getSpeakersList().get(3).getDisplayPicture());
+                String url = event.getSpeakersList().get(3).getDisplayPicture();
+                RequestOptions requestOptions = new RequestOptions();
+                requestOptions.placeholder(R.drawable.user);
+                Glide.with(mContext)
+                        .setDefaultRequestOptions(requestOptions)
+                        .load(url)
+                        .into(holder.speakerDp4);
             } else {
+                // make sure Glide doesn't load anything into this view until told otherwise
+                Glide.with(mContext).clear(holder.speakerDp4);
+                // remove the placeholder (optional); read comments below
                 holder.speakerDp4.setImageDrawable(null);
             }
             holder.speakerView4.setVisibility(View.VISIBLE);
+        }
+
+        if(event.getSpeakersList().size()>4){
+            holder.speakerName5.setText(event.getSpeakersList().get(4).getName());
+            holder.speakerPos5.setText(event.getSpeakersList().get(4).getPosition());
+            if (event.getSpeakersList().get(4).getDisplayPicture() != null) {
+                String url = event.getSpeakersList().get(4).getDisplayPicture();
+                RequestOptions requestOptions = new RequestOptions();
+                requestOptions.placeholder(R.drawable.user);
+                Glide.with(mContext)
+                        .setDefaultRequestOptions(requestOptions)
+                        .load(url)
+                        .into(holder.speakerDp5);
+            } else {
+                // make sure Glide doesn't load anything into this view until told otherwise
+                Glide.with(mContext).clear(holder.speakerDp5);
+                // remove the placeholder (optional); read comments below
+                holder.speakerDp5.setImageDrawable(null);
+            }
+            holder.speakerView5.setVisibility(View.VISIBLE);
         }
     }
 
@@ -116,6 +172,11 @@ public class SeminarDayRecyclerViewAdapter extends RecyclerView.Adapter<SeminarD
         private final TextView speakerPos4;
         private final CircularImageView speakerDp4;
 
+        private final LinearLayout speakerView5;
+        private final TextView speakerName5;
+        private final TextView speakerPos5;
+        private final CircularImageView speakerDp5;
+
         SeminarDayViewHolder(final View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.rv_event_title_view);
@@ -142,6 +203,11 @@ public class SeminarDayRecyclerViewAdapter extends RecyclerView.Adapter<SeminarD
             speakerName4 = itemView.findViewById(R.id.rv_speaker_name_4);
             speakerPos4 = itemView.findViewById(R.id.rv_speaker_position_4);
             speakerDp4 = itemView.findViewById(R.id.rv_speaker_image_4);
+
+            speakerView5 = itemView.findViewById(R.id.rv_event_speaker_5);
+            speakerName5 = itemView.findViewById(R.id.rv_speaker_name_5);
+            speakerPos5 = itemView.findViewById(R.id.rv_speaker_position_5);
+            speakerDp5 = itemView.findViewById(R.id.rv_speaker_image_5);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
