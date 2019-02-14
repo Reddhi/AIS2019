@@ -32,7 +32,7 @@ import static android.content.ContentValues.TAG;
 
 public class ContactFragment extends Fragment {
 
-    ArrayList<ContactPerson> registration, accommodation, transport, website;
+    ArrayList<ContactPerson> registration, accommodation, transport, website, technical, event, medical, photography, pressMedia;
     Context mContext;
     public ContactFragment() {
         // Required empty public constructor
@@ -44,21 +44,76 @@ public class ContactFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_contact, container, false);
-        final RecyclerView reg, acc, trans, web;
+        final RecyclerView reg, acc, trans, web, tech, eve, med, photo, press;
 
         LinearLayout sec1, sec2, sec3;
         reg = view.findViewById(R.id.con_registration_recycler_view);
         acc = view.findViewById(R.id.con_accommodation_recycler_view);
         trans = view.findViewById(R.id.con_transport_recycler_view);
         web = view.findViewById(R.id.con_website_recycler_view);
+        tech = view.findViewById(R.id.con_technical_recycler_view);
+        eve = view.findViewById(R.id.con_event_recycler_view);
+        med = view.findViewById(R.id.con_medical_recycler_view);
+        photo = view.findViewById(R.id.con_photography_recycler_view);
+        press = view.findViewById(R.id.con_press_recycler_view);
         sec1 = view.findViewById(R.id.call_sec_1);
         sec2 = view.findViewById(R.id.call_sec_2);
         sec3 = view.findViewById(R.id.email_sec);
 
-        reg.setLayoutManager(new LinearLayoutManager(mContext));
-        acc.setLayoutManager(new LinearLayoutManager(mContext));
-        trans.setLayoutManager(new LinearLayoutManager(mContext));
-        web.setLayoutManager(new LinearLayoutManager(mContext));
+        reg.setLayoutManager(new LinearLayoutManager(mContext){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        });
+        acc.setLayoutManager(new LinearLayoutManager(mContext){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        });
+        trans.setLayoutManager(new LinearLayoutManager(mContext){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        });
+        web.setLayoutManager(new LinearLayoutManager(mContext){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        });
+        tech.setLayoutManager(new LinearLayoutManager(mContext){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        });
+        eve.setLayoutManager(new LinearLayoutManager(mContext){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        });
+        med.setLayoutManager(new LinearLayoutManager(mContext){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        });
+        photo.setLayoutManager(new LinearLayoutManager(mContext){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        });
+        press.setLayoutManager(new LinearLayoutManager(mContext){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        });
 
         sec1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,6 +151,11 @@ public class ContactFragment extends Fragment {
         accommodation = new ArrayList<>();
         transport = new ArrayList<>();
         website = new ArrayList<>();
+        medical = new ArrayList<>();
+        event = new ArrayList<>();
+        technical = new ArrayList<>();
+        photography = new ArrayList<>();
+        pressMedia = new ArrayList<>();
 
         DatabaseReference myRef = FirebaseDatabaseUtility.getDatabase().getReference("contact");
         final Query eventQuery = myRef.orderByKey();
@@ -106,6 +166,11 @@ public class ContactFragment extends Fragment {
                 accommodation = new ArrayList<>();
                 transport = new ArrayList<>();
                 website = new ArrayList<>();
+                medical = new ArrayList<>();
+                event = new ArrayList<>();
+                technical = new ArrayList<>();
+                photography = new ArrayList<>();
+                pressMedia = new ArrayList<>();
                 for (DataSnapshot dataSnapshot : eventSnapshot.getChildren()) {
                     ContactPerson data = dataSnapshot.getValue(ContactPerson.class);
                     if(data.getCategory().equals("Transport")){
@@ -116,6 +181,16 @@ public class ContactFragment extends Fragment {
                         registration.add(data);
                     } else if(data.getCategory().equals("Website")){
                         website.add(data);
+                    } else if(data.getCategory().equals("Technical")){
+                        technical.add(data);
+                    } else if(data.getCategory().equals("Event Management")){
+                        event.add(data);
+                    } else if(data.getCategory().equals("Medical Emergency")){
+                        medical.add(data);
+                    } else if(data.getCategory().equals("Press & Media")){
+                        pressMedia.add(data);
+                    } else if(data.getCategory().equals("Photography")){
+                        photography.add(data);
                     }
                 }
                 ContactRecyclerViewAdapter adapterT = new ContactRecyclerViewAdapter(mContext, transport);
@@ -126,6 +201,16 @@ public class ContactFragment extends Fragment {
                 acc.setAdapter(adapterA);
                 ContactRecyclerViewAdapter adapterW = new ContactRecyclerViewAdapter(mContext, website);
                 web.setAdapter(adapterW);
+                ContactRecyclerViewAdapter adapterTT = new ContactRecyclerViewAdapter(mContext, technical);
+                tech.setAdapter(adapterTT);
+                ContactRecyclerViewAdapter adapterE = new ContactRecyclerViewAdapter(mContext, event);
+                eve.setAdapter(adapterE);
+                ContactRecyclerViewAdapter adapterPh = new ContactRecyclerViewAdapter(mContext, photography);
+                photo.setAdapter(adapterPh);
+                ContactRecyclerViewAdapter adapterM = new ContactRecyclerViewAdapter(mContext, medical);
+                med.setAdapter(adapterM);
+                ContactRecyclerViewAdapter adapterPr = new ContactRecyclerViewAdapter(mContext, pressMedia);
+                press.setAdapter(adapterPr);
             }
 
             @Override

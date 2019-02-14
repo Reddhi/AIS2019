@@ -46,103 +46,118 @@ public class SeminarDayRecyclerViewAdapter extends RecyclerView.Adapter<SeminarD
         String time = event.getStartTime()+" - "+event.getEndTime();
         holder.time.setText(time);
         holder.location.setText(event.getLocation());
-        
-        holder.speakerName1.setText(event.getSpeakersList().get(0).getName());
-        holder.speakerPos1.setText(event.getSpeakersList().get(0).getPosition());
-        if (event.getSpeakersList().get(0).getDisplayPicture() != null) {
-            String url = event.getSpeakersList().get(0).getDisplayPicture();
-            RequestOptions requestOptions = new RequestOptions();
-            requestOptions.placeholder(R.drawable.user);
-            Glide.with(mContext)
-                    .setDefaultRequestOptions(requestOptions)
-                    .load(url)
-                    .into(holder.speakerDp1);
+        holder.speakerDp1.setImageDrawable(null);
+        holder.speakerDp2.setImageDrawable(null);
+        holder.speakerDp3.setImageDrawable(null);
+        holder.speakerDp4.setImageDrawable(null);
+        holder.speakerDp5.setImageDrawable(null);
+
+        if(event.getType().equals("Plenary") || event.getType().equals("Invited")){
+
+            holder.speakerName1.setText(event.getSpeakersList().get(0).getName());
+            holder.speakerPos1.setText(event.getSpeakersList().get(0).getPosition());
+            if (event.getSpeakersList().get(0).getDisplayPicture() != null) {
+                String url = event.getSpeakersList().get(0).getDisplayPicture();
+                RequestOptions requestOptions = new RequestOptions();
+                requestOptions.placeholder(R.drawable.user);
+                Glide.with(mContext)
+                        .setDefaultRequestOptions(requestOptions)
+                        .load(url)
+                        .into(holder.speakerDp1);
+            } else {
+                // make sure Glide doesn't load anything into this view until told otherwise
+                Glide.with(mContext).clear(holder.speakerDp1);
+                // remove the placeholder (optional); read comments below
+                holder.speakerDp1.setImageDrawable(null);
+            }
+            holder.speakerView1.setVisibility(View.VISIBLE);
+
+            if(event.getSpeakersList().size()>1){
+                holder.speakerName2.setText(event.getSpeakersList().get(1).getName());
+                holder.speakerPos2.setText(event.getSpeakersList().get(1).getPosition());
+                if (event.getSpeakersList().get(1).getDisplayPicture() != null) {
+                    String url = event.getSpeakersList().get(1).getDisplayPicture();
+                    RequestOptions requestOptions = new RequestOptions();
+                    requestOptions.placeholder(R.drawable.user);
+                    Glide.with(mContext)
+                            .setDefaultRequestOptions(requestOptions)
+                            .load(url)
+                            .into(holder.speakerDp2);
+                } else {
+                    // make sure Glide doesn't load anything into this view until told otherwise
+                    Glide.with(mContext).clear(holder.speakerDp2);
+                    // remove the placeholder (optional); read comments below
+                    holder.speakerDp2.setImageDrawable(null);
+                }
+                holder.speakerView2.setVisibility(View.VISIBLE);
+            }
+
+            if(event.getSpeakersList().size()>2){
+                holder.speakerName3.setText(event.getSpeakersList().get(2).getName());
+                holder.speakerPos3.setText(event.getSpeakersList().get(2).getPosition());
+                if (event.getSpeakersList().get(2).getDisplayPicture() != null) {
+                    String url = event.getSpeakersList().get(2).getDisplayPicture();
+                    RequestOptions requestOptions = new RequestOptions();
+                    requestOptions.placeholder(R.drawable.user);
+                    Glide.with(mContext)
+                            .setDefaultRequestOptions(requestOptions)
+                            .load(url)
+                            .into(holder.speakerDp3);
+                } else {
+                    // make sure Glide doesn't load anything into this view until told otherwise
+                    Glide.with(mContext).clear(holder.speakerDp3);
+                    // remove the placeholder (optional); read comments below
+                    holder.speakerDp3.setImageDrawable(null);
+                }
+                holder.speakerView3.setVisibility(View.VISIBLE);
+            }
+
+            if(event.getSpeakersList().size()>3){
+                holder.speakerName4.setText(event.getSpeakersList().get(3).getName());
+                holder.speakerPos4.setText(event.getSpeakersList().get(3).getPosition());
+                if (event.getSpeakersList().get(3).getDisplayPicture() != null) {
+                    String url = event.getSpeakersList().get(3).getDisplayPicture();
+                    RequestOptions requestOptions = new RequestOptions();
+                    requestOptions.placeholder(R.drawable.user);
+                    Glide.with(mContext)
+                            .setDefaultRequestOptions(requestOptions)
+                            .load(url)
+                            .into(holder.speakerDp4);
+                } else {
+                    // make sure Glide doesn't load anything into this view until told otherwise
+                    Glide.with(mContext).clear(holder.speakerDp4);
+                    // remove the placeholder (optional); read comments below
+                    holder.speakerDp4.setImageDrawable(null);
+                }
+                holder.speakerView4.setVisibility(View.VISIBLE);
+            }
+
+            if(event.getSpeakersList().size()>4){
+                holder.speakerName5.setText(event.getSpeakersList().get(4).getName());
+                holder.speakerPos5.setText(event.getSpeakersList().get(4).getPosition());
+                if (event.getSpeakersList().get(4).getDisplayPicture() != null) {
+                    String url = event.getSpeakersList().get(4).getDisplayPicture();
+                    RequestOptions requestOptions = new RequestOptions();
+                    requestOptions.placeholder(R.drawable.user);
+                    Glide.with(mContext)
+                            .setDefaultRequestOptions(requestOptions)
+                            .load(url)
+                            .into(holder.speakerDp5);
+                } else {
+                    // make sure Glide doesn't load anything into this view until told otherwise
+                    Glide.with(mContext).clear(holder.speakerDp5);
+                    // remove the placeholder (optional); read comments below
+                    holder.speakerDp5.setImageDrawable(null);
+                }
+                holder.speakerView5.setVisibility(View.VISIBLE);
+            }
         } else {
-            // make sure Glide doesn't load anything into this view until told otherwise
-            Glide.with(mContext).clear(holder.speakerDp1);
-            // remove the placeholder (optional); read comments below
-            holder.speakerDp1.setImageDrawable(null);
-        }
-        holder.speakerView1.setVisibility(View.VISIBLE);
-        
-        if(event.getSpeakersList().size()>1){
-            holder.speakerName2.setText(event.getSpeakersList().get(1).getName());
-            holder.speakerPos2.setText(event.getSpeakersList().get(1).getPosition());
-            if (event.getSpeakersList().get(1).getDisplayPicture() != null) {
-                String url = event.getSpeakersList().get(1).getDisplayPicture();
-                RequestOptions requestOptions = new RequestOptions();
-                requestOptions.placeholder(R.drawable.user);
-                Glide.with(mContext)
-                        .setDefaultRequestOptions(requestOptions)
-                        .load(url)
-                        .into(holder.speakerDp2);
-            } else {
-                // make sure Glide doesn't load anything into this view until told otherwise
-                Glide.with(mContext).clear(holder.speakerDp2);
-                // remove the placeholder (optional); read comments below
-                holder.speakerDp2.setImageDrawable(null);
-            }
-            holder.speakerView2.setVisibility(View.VISIBLE);
-        }
+            holder.speakerView1.setVisibility(View.GONE);
+            holder.speakerView2.setVisibility(View.GONE);
+            holder.speakerView3.setVisibility(View.GONE);
+            holder.speakerView4.setVisibility(View.GONE);
+            holder.speakerView5.setVisibility(View.GONE);
 
-        if(event.getSpeakersList().size()>2){
-            holder.speakerName3.setText(event.getSpeakersList().get(2).getName());
-            holder.speakerPos3.setText(event.getSpeakersList().get(2).getPosition());
-            if (event.getSpeakersList().get(2).getDisplayPicture() != null) {
-                String url = event.getSpeakersList().get(2).getDisplayPicture();
-                RequestOptions requestOptions = new RequestOptions();
-                requestOptions.placeholder(R.drawable.user);
-                Glide.with(mContext)
-                        .setDefaultRequestOptions(requestOptions)
-                        .load(url)
-                        .into(holder.speakerDp3);
-            } else {
-                // make sure Glide doesn't load anything into this view until told otherwise
-                Glide.with(mContext).clear(holder.speakerDp3);
-                // remove the placeholder (optional); read comments below
-                holder.speakerDp3.setImageDrawable(null);
-            }
-            holder.speakerView3.setVisibility(View.VISIBLE);
-        }
-
-        if(event.getSpeakersList().size()>3){
-            holder.speakerName4.setText(event.getSpeakersList().get(3).getName());
-            holder.speakerPos4.setText(event.getSpeakersList().get(3).getPosition());
-            if (event.getSpeakersList().get(3).getDisplayPicture() != null) {
-                String url = event.getSpeakersList().get(3).getDisplayPicture();
-                RequestOptions requestOptions = new RequestOptions();
-                requestOptions.placeholder(R.drawable.user);
-                Glide.with(mContext)
-                        .setDefaultRequestOptions(requestOptions)
-                        .load(url)
-                        .into(holder.speakerDp4);
-            } else {
-                // make sure Glide doesn't load anything into this view until told otherwise
-                Glide.with(mContext).clear(holder.speakerDp4);
-                // remove the placeholder (optional); read comments below
-                holder.speakerDp4.setImageDrawable(null);
-            }
-            holder.speakerView4.setVisibility(View.VISIBLE);
-        }
-
-        if(event.getSpeakersList().size()>4){
-            holder.speakerName5.setText(event.getSpeakersList().get(4).getName());
-            holder.speakerPos5.setText(event.getSpeakersList().get(4).getPosition());
-            if (event.getSpeakersList().get(4).getDisplayPicture() != null) {
-                String url = event.getSpeakersList().get(4).getDisplayPicture();
-                RequestOptions requestOptions = new RequestOptions();
-                requestOptions.placeholder(R.drawable.user);
-                Glide.with(mContext)
-                        .setDefaultRequestOptions(requestOptions)
-                        .load(url)
-                        .into(holder.speakerDp5);
-            } else {
-                // make sure Glide doesn't load anything into this view until told otherwise
-                Glide.with(mContext).clear(holder.speakerDp5);
-                // remove the placeholder (optional); read comments below
-                holder.speakerDp5.setImageDrawable(null);
-            }
-            holder.speakerView5.setVisibility(View.VISIBLE);
         }
     }
 
