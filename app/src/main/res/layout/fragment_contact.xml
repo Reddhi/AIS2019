@@ -35,6 +35,41 @@
             android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:text="@string/con_transport"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/image_border"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/con_transport_recycler_view"/>
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/con_medical"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/image_border"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/con_medical_recycler_view"/>
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="@string/con_accommodation"
             android:textColor="@color/colorWhite"
             android:background="@drawable/image_border"
@@ -48,12 +83,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/con_accommodation_recycler_view"/>
 
-
         <TextView
             android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/con_transport"
+            android:text="@string/con_technical"
             android:textColor="@color/colorWhite"
             android:background="@drawable/image_border"
             android:textStyle="bold"
@@ -65,7 +99,61 @@
         <android.support.v7.widget.RecyclerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/con_transport_recycler_view"/>
+            android:id="@+id/con_technical_recycler_view"/>
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/con_event"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/image_border"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/con_event_recycler_view"/>
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/con_photography"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/image_border"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/con_photography_recycler_view"/>
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/con_press"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/image_border"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/con_press_recycler_view"/>
 
         <TextView
             android:layout_width="320dp"

@@ -44,7 +44,6 @@ public class ContactRecyclerViewAdapter extends RecyclerView.Adapter<ContactRecy
         holder.name.setText(data.getName());
         String txt = "+91 "+data.getMobile();
         holder.mobile.setText(txt);
-
         holder.callButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

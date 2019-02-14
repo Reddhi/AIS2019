@@ -50,7 +50,12 @@ public class SponsorsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_sponsors, container, false);
         mContext = this.getActivity().getBaseContext();
         rv = view.findViewById(R.id.sponsors_recycler_view);
-        rv.setLayoutManager(new GridLayoutManager(mContext, 2));
+        rv.setLayoutManager(new GridLayoutManager(mContext, 2){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        });
         DatabaseReference myRef = FirebaseDatabaseUtility.getDatabase().getReference("sponsors");
         final Query eventQuery = myRef.orderByKey();
         eventQuery.addValueEventListener(new ValueEventListener() {
