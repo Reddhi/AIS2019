@@ -36,7 +36,6 @@ public class ContactFragment extends Fragment {
     Context mContext;
     public ContactFragment() {
         // Required empty public constructor
-        this.mContext = getContext();
     }
 
     @Override
@@ -44,8 +43,8 @@ public class ContactFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_contact, container, false);
+        mContext = getActivity().getBaseContext();
         final RecyclerView reg, acc, trans, web, tech, eve, med, photo, press;
-
         LinearLayout sec1, sec2, sec3;
         reg = view.findViewById(R.id.con_registration_recycler_view);
         acc = view.findViewById(R.id.con_accommodation_recycler_view);

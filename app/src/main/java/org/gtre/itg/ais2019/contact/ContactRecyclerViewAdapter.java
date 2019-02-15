@@ -20,9 +20,9 @@ public class ContactRecyclerViewAdapter extends RecyclerView.Adapter<ContactRecy
     private Context mContext;
 
     public ContactRecyclerViewAdapter(Context mContext, ArrayList<ContactPerson> contacts) {
-            this.mContext = mContext;
-            this.contacts = contacts;
-            }
+        this.mContext = mContext;
+        this.contacts = contacts;
+    }
 
 
     @Override
@@ -49,6 +49,7 @@ public class ContactRecyclerViewAdapter extends RecyclerView.Adapter<ContactRecy
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
                 intent.setData(Uri.parse("tel:+91"+data.getMobile()));
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 if (intent.resolveActivity(mContext.getPackageManager()) != null) {
                     mContext.startActivity(intent);
                 }

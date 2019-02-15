@@ -56,7 +56,7 @@ public class DayTwoFragment extends Fragment {
         rv = view.findViewById(R.id.day_two_recycler_view);
         rv.setLayoutManager(new LinearLayoutManager(mContext));
         DatabaseReference myRef = FirebaseDatabaseUtility.getDatabase().getReference("events");
-        final Query eventQuery = myRef.orderByChild("order");
+        final Query eventQuery = myRef.orderByChild("startTime");
         eventQuery.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot eventSnapshot) {
