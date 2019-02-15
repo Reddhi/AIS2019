@@ -35,7 +35,7 @@ public class HomeFragment extends Fragment {
         secondsView = view.findViewById(R.id.seconds_left_view);
         timerContainer = view.findViewById(R.id.countdown_timer_view);
         Calendar targetDate = Calendar.getInstance();
-        targetDate.set(2019, 1, 18, 9,30);
+        targetDate.set(2019, 1, 18, 9,0);
         long currentTime = new Date().getTime();
         long targetTime = targetDate.getTimeInMillis();
         long ttl = targetTime - currentTime;
